@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bryanrady.ui">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.Dn2_FlowLayoutActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn3_BasePaintCanvasActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn3_BasePaintActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn3_CircleProgressBarActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_PaintShadersActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_BitmapShadersActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_LinerGradientActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_RadialGradientActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_SweepGradientActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_ComposeShadersActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn4_ZoomImageViewActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn5_PaintXfermodeActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn5_Xfermode16Activity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn5_Xfermode_SRCActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn5_Xfermode_DSTActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn5_Xfermode_OtherActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn6_PaintFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_MaskFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_BlurMaskFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_EmbossMaskFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_MatrixColorFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorFilterAlphaActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorFilterTranslateActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorFilterMuliptyActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorFilterRotationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorFilterTousheActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ManyFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_ColorMatrixFilterOtherActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_LightingColorFilterActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.Dn6_PorterDuffColorFilterActivity"
+            android:theme="@style/AppTheme"/>
+
+    </application>
+
+</manifest>

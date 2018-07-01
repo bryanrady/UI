@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_color_matrix_filter_other"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="矩阵颜色过滤的一些其他操作" />
+
+    <Button
+        android:id="@+id/btn_filter_color_lighting"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="LightingColorFilter效果" />
+
+    <Button
+        android:id="@+id/btn_filter_color_porterDuff"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="PorterDuffColorFilter效果" />
+
+</LinearLayout>
