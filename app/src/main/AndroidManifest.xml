@@ -20,6 +20,9 @@
         <activity android:name=".activity.Dn2_FlowLayoutActivity"
             android:theme="@style/AppTheme"/>
 
+        <activity android:name=".activity.Dn3_PaintActivity"
+            android:theme="@style/AppTheme"/>
+
         <activity android:name=".activity.Dn3_BasePaintCanvasActivity"
             android:theme="@style/AppTheme"/>
 
@@ -94,6 +97,9 @@
         <activity android:name=".activity.Dn6_LightingColorFilterActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.Dn6_PorterDuffColorFilterActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.Dn7_CanvasActivity"
             android:theme="@style/AppTheme"/>
 
     </application>

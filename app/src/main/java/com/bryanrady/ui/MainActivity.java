@@ -7,18 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.activity.Dn2_FlowLayoutActivity;
-import com.bryanrady.ui.activity.Dn3_BasePaintCanvasActivity;
-import com.bryanrady.ui.activity.Dn4_PaintShadersActivity;
-import com.bryanrady.ui.activity.Dn5_PaintXfermodeActivity;
-import com.bryanrady.ui.activity.Dn6_PaintFilterActivity;
+import com.bryanrady.ui.activity.Dn3_PaintActivity;
+import com.bryanrady.ui.activity.Dn7_CanvasActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_flowlayout;
-    private Button btn_paint_canvas;
-    private Button btn_paint_shader;
-    private Button btn_paint_xfermode;
-    private Button btn_paint_filter;
+    private Button btn_paint;
+    private Button btn_canvas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_flowlayout = (Button) findViewById(R.id.btn_flowlayout);
         btn_flowlayout.setOnClickListener(this);
 
-        btn_paint_canvas = (Button) findViewById(R.id.btn_paint_canvas);
-        btn_paint_canvas.setOnClickListener(this);
+        btn_paint = (Button) findViewById(R.id.btn_paint);
+        btn_paint.setOnClickListener(this);
 
-        btn_paint_shader = (Button) findViewById(R.id.btn_paint_shader);
-        btn_paint_shader.setOnClickListener(this);
-
-        btn_paint_xfermode = (Button) findViewById(R.id.btn_paint_xfermode);
-        btn_paint_xfermode.setOnClickListener(this);
-
-        btn_paint_filter = (Button) findViewById(R.id.btn_paint_filter);
-        btn_paint_filter.setOnClickListener(this);
+        btn_canvas = (Button) findViewById(R.id.btn_canvas);
+        btn_canvas.setOnClickListener(this);
     }
 
     @Override
@@ -53,20 +43,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, Dn2_FlowLayoutActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_paint_canvas:
-                intent.setClass(this, Dn3_BasePaintCanvasActivity.class);
+            case R.id.btn_paint:
+                intent.setClass(this, Dn3_PaintActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_paint_shader:
-                intent.setClass(this, Dn4_PaintShadersActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_paint_xfermode:
-                intent.setClass(this, Dn5_PaintXfermodeActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_paint_filter:
-                intent.setClass(this, Dn6_PaintFilterActivity.class);
+            case R.id.btn_canvas:
+                intent.setClass(this, Dn7_CanvasActivity.class);
                 startActivity(intent);
                 break;
         }
