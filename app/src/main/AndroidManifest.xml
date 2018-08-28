@@ -102,6 +102,26 @@
         <activity android:name=".activity.Dn7_CanvasActivity"
             android:theme="@style/AppTheme"/>
 
+
+        <activity android:name=".activity.animation.Dn16_AnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_TweenAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_TranslateAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_ScaleAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_RotateAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_AlphaAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_SetAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_FrameAnimationActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.animation.Dn16_PropertyAnimatorActivity"
+            android:theme="@style/AppTheme"/>
+
     </application>
 
 </manifest>
