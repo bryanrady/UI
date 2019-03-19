@@ -44,7 +44,7 @@ public class Dn16_TweenAnimationActivity extends AppCompatActivity implements Vi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dn16_tween_animation);
+        setContentView(R.layout.dn16_tween_animation_example);
 
         initView();
     }

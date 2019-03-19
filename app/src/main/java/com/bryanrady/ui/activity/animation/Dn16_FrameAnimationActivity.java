@@ -1,9 +1,14 @@
 package com.bryanrady.ui.activity.animation;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import com.bryanrady.ui.R;
 
 /**
  *
@@ -34,74 +39,45 @@ import android.view.View;
 
 public class Dn16_FrameAnimationActivity extends AppCompatActivity{
 
-//    private Button btn_startFrame,btn_stopFrame;
-//    private ImageView iv;
-//    private AnimationDrawable animationDrawable;
+    private Button btn_startFrame,btn_stopFrame;
+    private ImageView iv;
+    private AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.dn16_frame_animation);
 
-//        iv = (ImageView) findViewById(R.id.iv);
-//        btn_startFrame = (Button) findViewById(R.id.btn_startFrame);
-//        btn_stopFrame = (Button) findViewById(R.id.btn_stopFrame);
+        iv = (ImageView) findViewById(R.id.iv_animation);
+        btn_startFrame = (Button) findViewById(R.id.btn_startFrame);
+        btn_stopFrame = (Button) findViewById(R.id.btn_stopFrame);
+        btn_startFrame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //  1. 设置动画
+                iv.setImageResource(R.drawable.wifi_frame_anim);
+                // 2. 获取动画对象
+                animationDrawable = (AnimationDrawable) iv.getDrawable();
+                // 3. 启动动画
+                animationDrawable.start();
+                //设置执行1次 true n次 false
+                animationDrawable.setOneShot(false);
+            }
+        });
+
+        btn_stopFrame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //停止动画
+                // 1. 设置动画
+                iv.setImageResource(R.drawable.wifi_frame_anim);
+                // 2. 获取动画对象
+                animationDrawable = (AnimationDrawable) iv.getDrawable();
+                // 3. 暂停动画
+                animationDrawable.stop();
+            }
+        });
     }
-
-// 一、在xml中配置
-
-//    knight_attack drawable文件
-
-    //    <?xml version="1.0" encoding="utf-8"?>
-//<animation-list
-//    xmlns:android="http://schemas.android.com/apk/res/android"
-//    android:oneshot="true" // 设置是否只播放一次，默认为false
-//            >
-//
-//// item = 动画图片资源；duration = 设置一帧持续时间(ms)
-//    <item android:drawable="@drawable/a0" android:duration="100"/>
-//    <item android:drawable="@drawable/a1" android:duration="100"/>
-//    <item android:drawable="@drawable/a2" android:duration="100"/>
-//    <item android:drawable="@drawable/a3" android:duration="100"/>
-//    <item android:drawable="@drawable/a4" android:duration="100"/>
-//    <item android:drawable="@drawable/a5" android:duration="100"/>
-//    <item android:drawable="@drawable/a6" android:duration="100"/>
-//    <item android:drawable="@drawable/a7" android:duration="100"/>
-//    <item android:drawable="@drawable/a8" android:duration="100"/>
-//    <item android:drawable="@drawable/a9" android:duration="100"/>
-//    <item android:drawable="@drawable/a10" android:duration="100"/>
-//    <item android:drawable="@drawable/a11" android:duration="100"/>
-//    <item android:drawable="@drawable/a12" android:duration="100"/>
-//    <item android:drawable="@drawable/a13" android:duration="100"/>
-//    <item android:drawable="@drawable/a14" android:duration="100"/>
-//    <item android:drawable="@drawable/a15" android:duration="100"/>
-//    <item android:drawable="@drawable/a16" android:duration="100"/>
-//    <item android:drawable="@drawable/a17" android:duration="100"/>
-//    <item android:drawable="@drawable/a18" android:duration="100"/>
-//    <item android:drawable="@drawable/a19" android:duration="100"/>
-//    <item android:drawable="@drawable/a20" android:duration="100"/>
-//    <item android:drawable="@drawable/a21" android:duration="100"/>
-//    <item android:drawable="@drawable/a22" android:duration="100"/>
-//    <item android:drawable="@drawable/a23" android:duration="100"/>
-//    <item android:drawable="@drawable/a24" android:duration="100"/>
-//    <item android:drawable="@drawable/a25" android:duration="100"/>
-//</animation-list>
-
-//  <-- 开始动画 -->
-    // 1. 设置动画
-//    iv.setImageResource(R.drawable.knight_attack);
-//    // 2. 获取动画对象
-//    animationDrawable = (AnimationDrawable) iv.getDrawable();
-//    // 3. 启动动画
-//    animationDrawable.start();
-//
-
-    //停止动画
-    // 1. 设置动画
-//    iv.setImageResource(R.drawable.knight_attack);
-    // 2. 获取动画对象
-//    animationDrawable = (AnimationDrawable) iv.getDrawable();
-    // 3. 暂停动画
-//    animationDrawable.stop();
 
 
     // 二、在java代码中配置

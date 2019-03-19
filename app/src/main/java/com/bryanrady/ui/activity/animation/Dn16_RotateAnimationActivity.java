@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
-import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
@@ -23,7 +22,7 @@ public class Dn16_RotateAnimationActivity extends AppCompatActivity implements V
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dn16_tween_animation_scale);
+        setContentView(R.layout.dn16_tween_animation_example);
         button = findViewById(R.id.btn_tween_animation);
         button.setOnClickListener(this);
     }

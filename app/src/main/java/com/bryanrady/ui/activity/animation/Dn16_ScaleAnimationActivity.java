@@ -22,7 +22,7 @@ public class Dn16_ScaleAnimationActivity extends AppCompatActivity implements Vi
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dn16_tween_animation_scale);
+        setContentView(R.layout.dn16_tween_animation_example);
         button = findViewById(R.id.btn_tween_animation);
         button.setOnClickListener(this);
     }
@@ -31,8 +31,8 @@ public class Dn16_ScaleAnimationActivity extends AppCompatActivity implements Vi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_tween_animation:
-                startXmlScaleAnimation();
-                //startJavaScaleAnimation();
+            //    startXmlScaleAnimation();
+                startJavaScaleAnimation();
                 break;
         }
     }

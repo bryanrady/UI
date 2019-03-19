@@ -69,17 +69,26 @@ public class Dn4_ZoomImageView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+
         int x = (int) event.getX();
         int y = (int) event.getY();
 
-        // 将放大的图片往相反的方向挪动
-        mMatrix.setTranslate(RADIUS - x * mScaledFactor, RADIUS - y * mScaledFactor);
-        mShapeDrawable.getPaint().getShader().setLocalMatrix(mMatrix);
+        int width = mBitmap.getWidth();
+        int height = mBitmap.getHeight();
 
-        // 切出手势区域点位置的圆
-        mShapeDrawable.setBounds(x-RADIUS,y - RADIUS, x + RADIUS, y + RADIUS);
+        //让放大镜不跑到外面去
+        if( (x>RADIUS && x+RADIUS<width) && (y>RADIUS && y+RADIUS<height) ){
+            // 将放大的图片往相反的方向挪动
+            mMatrix.setTranslate(RADIUS - x * mScaledFactor, RADIUS - y * mScaledFactor);
+            mShapeDrawable.getPaint().getShader().setLocalMatrix(mMatrix);
 
-        invalidate();
-        return true;
+            // 切出手势区域点位置的圆
+            mShapeDrawable.setBounds(x-RADIUS,y - RADIUS, x + RADIUS, y + RADIUS);
+
+            invalidate();
+            return true;
+        }
+
+        return false;
     }
 }

@@ -1,7 +1,5 @@
 package com.bryanrady.ui.activity.animation;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -30,30 +28,10 @@ public class Dn16_TranslateAnimationActivity extends AppCompatActivity implement
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dn16_tween_animation_translate);
+        setContentView(R.layout.dn16_tween_animation_example);
         button = findViewById(R.id.btn_tween_animation);
         button.setOnClickListener(this);
 
-        //监听动画
-        //Animation类通过监听动画开始 / 结束 / 重复时刻来进行一系列操作，如跳转页面等等
-        //通过在 Java 代码里setAnimationListener()方法设置
-        translateAnimation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-                // 动画开始时回调
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                // 动画结束时回调
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-                //动画重复执行的时候回调
-            }
-
-        });
 
 //        应用场景
 //        7.1 标准的动画效果
@@ -84,6 +62,28 @@ public class Dn16_TranslateAnimationActivity extends AppCompatActivity implement
             case R.id.btn_tween_animation:
                 //startXmlTranslateAnimation();
                 startJavaTranslateAnimation();
+
+                //监听动画
+                //Animation类通过监听动画开始 / 结束 / 重复时刻来进行一系列操作，如跳转页面等等
+                //通过在 Java 代码里setAnimationListener()方法设置
+                translateAnimation.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                        // 动画开始时回调
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        // 动画结束时回调
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                        //动画重复执行的时候回调
+                    }
+
+                });
+
                 break;
         }
     }

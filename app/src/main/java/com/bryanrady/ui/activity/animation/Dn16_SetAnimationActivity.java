@@ -26,7 +26,7 @@ public class Dn16_SetAnimationActivity extends AppCompatActivity implements View
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dn16_tween_animation_scale);
+        setContentView(R.layout.dn16_tween_animation_example);
         button = findViewById(R.id.btn_tween_animation);
         button.setOnClickListener(this);
     }
@@ -47,9 +47,12 @@ public class Dn16_SetAnimationActivity extends AppCompatActivity implements View
     }
 
     private void startJavaSetAnimation() {
+
         // 步骤1:创建组合动画对象(设置为true)
         AnimationSet setAnimation = new AnimationSet(true);
+
         // 步骤2:设置组合动画的属性
+
         // 特别说明以下情况
         // 因为在下面的旋转动画设置了无限循环(RepeatCount = INFINITE)
         // 所以动画不会结束，而是无限循环
@@ -61,26 +64,26 @@ public class Dn16_SetAnimationActivity extends AppCompatActivity implements View
 
         // 子动画1:旋转动画
         Animation rotate = new RotateAnimation(0,360,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
-        rotate.setDuration(1000);
+        rotate.setDuration(3000);
         rotate.setRepeatMode(Animation.RESTART);
-        rotate.setRepeatCount(Animation.INFINITE);
+    //    rotate.setRepeatCount(Animation.INFINITE);
 
         // 子动画2:平移动画
-        Animation translate = new TranslateAnimation(TranslateAnimation.RELATIVE_TO_PARENT,-0.5f,
-                TranslateAnimation.RELATIVE_TO_PARENT,0.5f,
+        Animation translate = new TranslateAnimation(TranslateAnimation.RELATIVE_TO_PARENT,0,
+                TranslateAnimation.RELATIVE_TO_PARENT,0.2f,
                 TranslateAnimation.RELATIVE_TO_SELF,0
                 ,TranslateAnimation.RELATIVE_TO_SELF,0);
-        translate.setDuration(10000);
+        translate.setDuration(3000);
 
         // 子动画3:透明度动画
-        Animation alpha = new AlphaAnimation(1,0);
+        Animation alpha = new AlphaAnimation(1,0.3f);
         alpha.setDuration(3000);
-        alpha.setStartOffset(7000);
+        alpha.setStartOffset(3000);
 
         // 子动画4:缩放动画
         Animation scale1 = new ScaleAnimation(1,0.5f,1,0.5f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
-        scale1.setDuration(1000);
-        scale1.setStartOffset(4000);
+        scale1.setDuration(3000);
+        scale1.setStartOffset(3000);
 
         // 步骤4:将创建的子动画添加到组合动画里
         setAnimation.addAnimation(alpha);

@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btn_canvas:
-                intent.setClass(this, Dn7_CanvasActivity.class);
-                startActivity(intent);
+//                intent.setClass(this, Dn7_CanvasActivity.class);
+//                startActivity(intent);
                 break;
             case R.id.btn_animation:
                 intent.setClass(this, Dn16_AnimationActivity.class);
