@@ -20,51 +20,41 @@
         <activity android:name=".activity.measure_layout.FlowLayoutActivity"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name=".activity.paint.PaintActivity"
-            android:theme="@style/AppTheme"/>
 
         <activity android:name=".activity.BasePaintCanvasActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.BaseDrawActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.DrawCircleProgressBarActivity"
             android:theme="@style/AppTheme"/>
 
+
+        <activity android:name=".activity.paint.PaintActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.paint.PaintShadersActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.BitmapShadersActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.LinerGradientActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.RadialGradientActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.SweepGradientActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.ComposeShadersActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.ZoomImageViewActivity"
             android:theme="@style/AppTheme"/>
 
+
         <activity android:name=".activity.paint.PaintXfermodeActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.Xfermode16Activity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.Xfermode_SRCActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.Xfermode_DSTActivity"
             android:theme="@style/AppTheme"/>
-
         <activity android:name=".activity.paint.Xfermode_OtherActivity"
             android:theme="@style/AppTheme"/>
 
@@ -102,6 +92,10 @@
         <activity android:name=".activity.canvas.CanvasActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.canvas.CanvasTransferActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasClipActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasStatusSaveActivity"
             android:theme="@style/AppTheme"/>
 
 

@@ -11,6 +11,19 @@ import com.bryanrady.ui.R;
 
 /**
  * Created by wqb on 2018/7/1.
+ *
+ * 直面意思是画布，其实是分装的一个工具类
+
+ 一个Canvas类对象有四大基本要素
+
+ 1、一个是用来保存像素的bitmap  -----  画板
+
+ 2、一个Canvas在Bitmap上进行绘制操作 ---- 画布或者画纸（Layer---saveLayer操作时，新建一个透明的画布图层）
+
+ 3、绘制的东西
+
+ 4、绘制的画笔Paint
+ *
  */
 
 public class CanvasActivity extends AppCompatActivity implements View.OnClickListener {

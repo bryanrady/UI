@@ -25,7 +25,7 @@ public class CanvasStatusSaveActivity extends AppCompatActivity implements View.
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_canvas_transfer);
+        setContentView(R.layout.activity_canvas_status_save);
         initView();
     }
 
