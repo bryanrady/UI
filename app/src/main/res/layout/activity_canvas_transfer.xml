@@ -22,7 +22,7 @@
         android:text="Canvas裁剪----Clip" />
 
     <Button
-        android:id="@+id/btn_canvas_status_save"
+        android:id="@+id/btn_canvas_status"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"

@@ -6,27 +6,19 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_canvas_transfer"
+        android:id="@+id/btn_paint_base"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas变化技巧" />
+        android:text="Paint_Canvas基本用法" />
 
     <Button
-        android:id="@+id/btn_canvas_clip"
+        android:id="@+id/btn_circle_progress"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas裁剪----Clip" />
-
-    <Button
-        android:id="@+id/btn_canvas_status_save"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Canvas的状态保存---状态栈、Layer栈" />
+        android:text="圆形进度条" />
 
 </LinearLayout>

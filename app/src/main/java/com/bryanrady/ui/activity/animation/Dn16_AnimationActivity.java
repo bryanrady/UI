@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
-import com.bryanrady.ui.activity.Dn5_Xfermode16Activity;
-import com.bryanrady.ui.activity.Dn5_Xfermode_SRCActivity;
 
 /**
  * Created by wqb on 2018/7/17.

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+
+        <TableRow>
+            <Button
+                android:id="@+id/roundsrcin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="模糊阴影模式——NORMOL"/>
+            <Button
+                android:id="@+id/invertsrcin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="模糊阴影模式——SOLID"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/eraserview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="模糊阴影模式——OUTER"/>
+            <Button
+                android:id="@+id/guaguaview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="模糊阴影模式——INNER"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.bryanrady.ui.view.paint.Dn6_BlurMaskFilter_NORMAL
+        android:id="@+id/roundsrcin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.bryanrady.ui.view.paint.Dn6_BlurMaskFilter_SOLID
+        android:id="@+id/invertsrcin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.bryanrady.ui.view.paint.Dn6_BlurMaskFilter_OUTER
+        android:id="@+id/eraserview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.bryanrady.ui.view.paint.Dn6_BlurMaskFilter_INNER
+        android:id="@+id/guaguaview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

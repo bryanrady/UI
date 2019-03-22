@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.bryanrady.ui.activity.Dn2_FlowLayoutActivity;
-import com.bryanrady.ui.activity.Dn3_PaintActivity;
-import com.bryanrady.ui.activity.Dn7_CanvasActivity;
+import com.bryanrady.ui.activity.measure_layout.FlowLayoutActivity;
+import com.bryanrady.ui.activity.paint.PaintActivity;
+import com.bryanrady.ui.activity.canvas.CanvasActivity;
 import com.bryanrady.ui.activity.animation.Dn16_AnimationActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -45,16 +45,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent();
         switch (v.getId()){
             case R.id.btn_flowlayout:
-                intent.setClass(this, Dn2_FlowLayoutActivity.class);
+                intent.setClass(this, FlowLayoutActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_paint:
-                intent.setClass(this, Dn3_PaintActivity.class);
+                intent.setClass(this, PaintActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_canvas:
-//                intent.setClass(this, Dn7_CanvasActivity.class);
-//                startActivity(intent);
+                intent.setClass(this, CanvasActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btn_animation:
                 intent.setClass(this, Dn16_AnimationActivity.class);
