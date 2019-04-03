@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.bryanrady.ui.activity.measure_layout.FlowLayoutActivity;
 import com.bryanrady.ui.activity.paint.PaintActivity;
 import com.bryanrady.ui.activity.canvas.CanvasActivity;
-import com.bryanrady.ui.activity.animation.Dn16_AnimationActivity;
+import com.bryanrady.ui.activity.animation.AnimationActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btn_animation:
-                intent.setClass(this, Dn16_AnimationActivity.class);
+                intent.setClass(this, AnimationActivity.class);
                 startActivity(intent);
                 break;
         }

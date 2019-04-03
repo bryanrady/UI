@@ -65,7 +65,7 @@ public class CanvasActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.btn_canvas_status_save:
-                intent.setClass(this, CanvasStatusSaveActivity.class);
+                intent.setClass(this, CanvasSaveRestoreActivity.class);
                 startActivity(intent);
                 break;
         }

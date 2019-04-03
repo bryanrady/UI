@@ -12,15 +12,15 @@ import com.bryanrady.ui.activity.paint.PaintShadersActivity;
 import com.bryanrady.ui.activity.paint.PaintXfermodeActivity;
 
 /**
- * Canvas 变换技巧
+ * Canvas 裁剪    canvas.clipxxx系列
  * Created by wqb on 2018/7/1.
  */
 
 public class CanvasClipActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btn_canvas_transfer;
-    private Button btn_canvas_clip;
-    private Button btn_canvas_status;
+    private Button btn_canvas_clip_path;
+    private Button btn_canvas_clip_rect;
+    private Button btn_canvas_clip_round_image;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,14 +31,14 @@ public class CanvasClipActivity extends AppCompatActivity implements View.OnClic
 
     private void initView() {
 
-        btn_canvas_transfer = (Button) findViewById(R.id.btn_canvas_transfer);
-        btn_canvas_transfer.setOnClickListener(this);
+        btn_canvas_clip_path = (Button) findViewById(R.id.btn_canvas_clip_path);
+        btn_canvas_clip_path.setOnClickListener(this);
 
-        btn_canvas_clip = (Button) findViewById(R.id.btn_canvas_clip);
-        btn_canvas_clip.setOnClickListener(this);
+        btn_canvas_clip_rect = (Button) findViewById(R.id.btn_canvas_clip_rect);
+        btn_canvas_clip_rect.setOnClickListener(this);
 
-        btn_canvas_status = (Button) findViewById(R.id.btn_canvas_status);
-        btn_canvas_status.setOnClickListener(this);
+        btn_canvas_clip_round_image = (Button) findViewById(R.id.btn_canvas_clip_round_image);
+        btn_canvas_clip_round_image.setOnClickListener(this);
 
     }
 
@@ -46,18 +46,24 @@ public class CanvasClipActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         Intent intent = new Intent();
         switch (v.getId()){
-            case R.id.btn_canvas_transfer:
-                intent.setClass(this, CanvasClipActivity.class);
+            case R.id.btn_canvas_clip_path:
+                intent.setClass(this, CanvasClipPathActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_canvas_clip:
-                intent.setClass(this, PaintShadersActivity.class);
+            case R.id.btn_canvas_clip_rect:
+                intent.setClass(this, CanvasClipRectActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_canvas_status:
-                intent.setClass(this, PaintXfermodeActivity.class);
+            case R.id.btn_canvas_clip_round_image:
+                intent.setClass(this, CanvasClipPathRoundImageActivity.class);
                 startActivity(intent);
                 break;
         }
     }
+
+    /**
+     * 作业：1、实现ReavlView效果 --- 通过图片剪裁拼接（自定义Drawable实现）
+
+     2、自定义SearchView
+     */
 }

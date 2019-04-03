@@ -6,27 +6,27 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_canvas_transfer"
+        android:id="@+id/btn_canvas_clip_path"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas变化技巧" />
+        android:text="Canvas路径剪裁" />
 
     <Button
-        android:id="@+id/btn_canvas_clip"
+        android:id="@+id/btn_canvas_clip_rect"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas裁剪----Clip" />
+        android:text="Canvas矩形区域裁剪" />
 
     <Button
-        android:id="@+id/btn_canvas_status"
+        android:id="@+id/btn_canvas_clip_round_image"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas的状态保存---状态栈、Layer栈" />
+        android:text="ClipPath实现圆形头像" />
 
 </LinearLayout>

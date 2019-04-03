@@ -95,27 +95,33 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.canvas.CanvasClipActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.canvas.CanvasStatusSaveActivity"
+        <activity android:name=".activity.canvas.CanvasClipPathActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasClipRectActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasClipPathRoundImageActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasSaveRestoreActivity"
             android:theme="@style/AppTheme"/>
 
 
-        <activity android:name=".activity.animation.Dn16_AnimationActivity"
+        <activity android:name=".activity.animation.AnimationActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_TweenAnimationActivity"
+        <activity android:name=".activity.animation.TweenAnimationActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_TranslateAnimationActivity"
+        <activity android:name=".activity.animation.TweenTranslateActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_ScaleAnimationActivity"
+        <activity android:name=".activity.animation.TweenScaleActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_RotateAnimationActivity"
+        <activity android:name=".activity.animation.TweenRotateActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_AlphaAnimationActivity"
+        <activity android:name=".activity.animation.TweenAlphaActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_SetAnimationActivity"
+        <activity android:name=".activity.animation.TweenSetActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_FrameAnimationActivity"
+        <activity android:name=".activity.animation.FrameAnimationActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.animation.Dn16_PropertyAnimatorActivity"
+        <activity android:name=".activity.animation.ObjectorAnimatorActivity"
             android:theme="@style/AppTheme"/>
 
     </application>

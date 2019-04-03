@@ -14,6 +14,6 @@ public class ZoomImageViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dn4_zoom_image);
+        setContentView(R.layout.activity_zoom_image);
     }
 }

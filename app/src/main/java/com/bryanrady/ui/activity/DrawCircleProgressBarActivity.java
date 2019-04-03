@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.bryanrady.ui.R;
-import com.bryanrady.ui.view.Dn3_CircleProgressBar2;
+import com.bryanrady.ui.view.CircleProgressBar2;
 
 /**
  * Created by wqb on 2018/6/25.
@@ -13,7 +13,7 @@ import com.bryanrady.ui.view.Dn3_CircleProgressBar2;
 
 public class DrawCircleProgressBarActivity extends AppCompatActivity {
 
-    private Dn3_CircleProgressBar2 mProgressBar;
+    private CircleProgressBar2 mProgressBar;
     private int mProgress = 0;
 
     @Override

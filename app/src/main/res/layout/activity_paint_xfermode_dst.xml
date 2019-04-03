@@ -41,25 +41,25 @@
         </TableRow>
     </TableLayout>
 
-    <com.bryanrady.ui.view.paint.Dn5_RoundImageView_DSTIN
+    <com.bryanrady.ui.view.paint.RoundImageView_DST_IN
         android:id="@+id/roundimage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_InvertImageView_DSTIN
+    <com.bryanrady.ui.view.paint.InvertImageView_DST_IN
         android:id="@+id/invertimg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_IrregularWaveView_DSTIN
+    <com.bryanrady.ui.view.paint.IrregularWaveView_DST_IN
         android:id="@+id/irregularwaveview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_HeartMap_DSTIN
+    <com.bryanrady.ui.view.paint.HeartMap_DST_IN
         android:id="@+id/heartbitview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

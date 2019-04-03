@@ -29,13 +29,13 @@
     </TableLayout>
 
 
-    <com.bryanrady.ui.view.paint.Dn5_LightBookView_LIGHTEN
+    <com.bryanrady.ui.view.paint.LightBookView_LIGHTEN
         android:id="@+id/lightbookview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_TwitterView_MULTIPLY
+    <com.bryanrady.ui.view.paint.TwitterView_MULTIPLY
         android:id="@+id/twitterview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

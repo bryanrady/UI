@@ -55,36 +55,36 @@
         </TableRow>
     </TableLayout>
 
-    <com.bryanrady.ui.view.paint.Dn5_RoundImageView_SRCIN
+    <com.bryanrady.ui.view.paint.RoundImageView_SRC_IN
         android:id="@+id/roundsrcin_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_InvertImageView_SRCIN
+    <com.bryanrady.ui.view.paint.InvertImageView_SRC_IN
         android:id="@+id/invertsrcin_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_EraserView_SRCOUT
+    <com.bryanrady.ui.view.paint.EraserView_SRC_OUT
         android:id="@+id/eraserview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_GuaguaCardView_SRCOUT
+    <com.bryanrady.ui.view.paint.GuaguaCardView_SRC_OUT
         android:id="@+id/guaguaview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_RoundImageView_SRCATOP
+    <com.bryanrady.ui.view.paint.RoundImageView_SRC_ATOP
         android:id="@+id/roundsrcatop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.Dn5_InvertImageView_SRCATOP
+    <com.bryanrady.ui.view.paint.InvertImageView_SRC_ATOP
         android:id="@+id/invertsrcatop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
