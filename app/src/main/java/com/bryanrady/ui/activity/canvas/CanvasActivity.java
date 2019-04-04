@@ -31,6 +31,8 @@ public class CanvasActivity extends AppCompatActivity implements View.OnClickLis
     private Button btn_canvas_transfer;
     private Button btn_canvas_clip;
     private Button btn_canvas_status_save;
+    private Button btn_canvas_reveal_drawable;
+    private Button btn_canvas_search_view;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,6 +52,12 @@ public class CanvasActivity extends AppCompatActivity implements View.OnClickLis
         btn_canvas_status_save = (Button) findViewById(R.id.btn_canvas_status_save);
         btn_canvas_status_save.setOnClickListener(this);
 
+        btn_canvas_reveal_drawable = (Button) findViewById(R.id.btn_canvas_reveal_drawable);
+        btn_canvas_reveal_drawable.setOnClickListener(this);
+
+        btn_canvas_search_view = (Button) findViewById(R.id.btn_canvas_search_view);
+        btn_canvas_search_view.setOnClickListener(this);
+
     }
 
     @Override
@@ -66,6 +74,14 @@ public class CanvasActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.btn_canvas_status_save:
                 intent.setClass(this, CanvasSaveRestoreActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_canvas_reveal_drawable:
+                intent.setClass(this, CanvasRevealDrawableActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_canvas_search_view:
+                intent.setClass(this, CanvasSearchViewActivity.class);
                 startActivity(intent);
                 break;
         }

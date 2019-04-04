@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Alpha滤镜处理" />
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="RGB滤镜处理" />
 
     <Button
@@ -27,6 +29,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="两者混合叠加滤镜处理" />
 
 </LinearLayout>

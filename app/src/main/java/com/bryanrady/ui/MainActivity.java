@@ -10,6 +10,7 @@ import com.bryanrady.ui.activity.measure_layout.FlowLayoutActivity;
 import com.bryanrady.ui.activity.paint.PaintActivity;
 import com.bryanrady.ui.activity.canvas.CanvasActivity;
 import com.bryanrady.ui.activity.animation.AnimationActivity;
+import com.bryanrady.ui.activity.path.PathActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -54,6 +55,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_canvas:
                 intent.setClass(this, CanvasActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_path:
+                intent.setClass(this, PathActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_animation:

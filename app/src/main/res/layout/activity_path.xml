@@ -6,27 +6,30 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_canvas_transfer"
+        android:id="@+id/btn_path_base"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas变化技巧" />
+        android:textAllCaps="false"
+        android:text="Path基础知识" />
 
     <Button
-        android:id="@+id/btn_canvas_clip"
+        android:id="@+id/btn_path_bezier"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas裁剪----Clip" />
+        android:textAllCaps="false"
+        android:text="贝赛尔曲线" />
 
     <Button
-        android:id="@+id/btn_canvas_status"
+        android:id="@+id/btn_path_measure"
         android:layout_margin="5dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Canvas的状态保存---状态栈、Layer栈" />
+        android:textAllCaps="false"
+        android:text="Path辅助类PathMeasure" />
 
 </LinearLayout>

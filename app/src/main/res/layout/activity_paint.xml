@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Paint基础" />
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Paint——Shader高级渲染" />
 
     <Button
@@ -27,6 +29,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Paint—Xfermode图形混合" />
 
     <Button
@@ -35,6 +38,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Paint—Filter滤镜效果" />
 
 </LinearLayout>

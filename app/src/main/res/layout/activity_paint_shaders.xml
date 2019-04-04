@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="位图图像渲染" />
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="线性渲染" />
 
     <Button
@@ -27,6 +29,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="渐变/梯度渲染" />
 
     <Button
@@ -35,6 +38,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="环形渲染" />
 
     <Button
@@ -43,6 +47,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="组合渲染" />
 
     <Button
@@ -51,6 +56,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="位图渲染和ShapeDrawable实现放大镜" />
 
 </LinearLayout>

@@ -103,6 +103,15 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.canvas.CanvasSaveRestoreActivity"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasRevealDrawableActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.canvas.CanvasSearchViewActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.path.PathActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.PathBaseActivity"
+            android:theme="@style/AppTheme"/>
 
 
         <activity android:name=".activity.animation.AnimationActivity"

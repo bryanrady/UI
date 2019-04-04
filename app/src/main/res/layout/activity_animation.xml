@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="补间动画" />
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="帧动画" />
 
     <Button
@@ -27,6 +29,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="属性动画" />
 
 </LinearLayout>

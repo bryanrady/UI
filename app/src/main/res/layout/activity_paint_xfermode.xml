@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Xfermode的16种模式" />
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Xfermode_SRC类" />
 
     <Button
@@ -27,6 +29,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Xfermode_DST类" />
 
     <Button
@@ -35,6 +38,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Xfermode_其他类" />
 
 </LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark">
+
+    <com.bryanrady.ui.view.canvas.CustomSearchView
+        android:id="@+id/customSearchView"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_dark" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="open"
+            android:text="Open"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="close"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

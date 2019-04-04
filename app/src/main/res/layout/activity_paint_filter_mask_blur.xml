@@ -15,12 +15,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="模糊阴影模式——NORMOL"/>
             <Button
                 android:id="@+id/invertsrcin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="模糊阴影模式——SOLID"/>
         </TableRow>
 
@@ -30,12 +32,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="模糊阴影模式——OUTER"/>
             <Button
                 android:id="@+id/guaguaview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="模糊阴影模式——INNER"/>
         </TableRow>
     </TableLayout>

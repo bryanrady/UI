@@ -15,12 +15,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="圆角"/>
             <Button
                 android:id="@+id/invertsrcin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="倒影图像"/>
         </TableRow>
 
@@ -30,12 +32,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="橡皮擦"/>
             <Button
                 android:id="@+id/guaguaview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="刮刮卡"/>
         </TableRow>
 
@@ -45,12 +49,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="圆角"/>
             <Button
                 android:id="@+id/invertsrcatop"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="倒影图像"/>
         </TableRow>
     </TableLayout>

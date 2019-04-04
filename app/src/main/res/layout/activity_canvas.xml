@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Canvas变化技巧" />
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Canvas裁剪----Clip" />
 
     <Button
@@ -27,6 +29,25 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Canvas的状态保存---状态栈、Layer栈" />
+
+    <Button
+        android:id="@+id/btn_canvas_reveal_drawable"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Canvas---RevealDrawable" />
+
+    <Button
+        android:id="@+id/btn_canvas_search_view"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Canvas---SearchView" />
 
 </LinearLayout>

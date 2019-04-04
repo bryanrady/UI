@@ -16,12 +16,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="圆角"/>
             <Button
                 android:id="@+id/invertdstinbtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="倒影图像"/>
         </TableRow>
 
@@ -31,12 +33,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="不规则wave"/>
             <Button
                 android:id="@+id/heartbitbtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:text="心电图"/>
         </TableRow>
     </TableLayout>
