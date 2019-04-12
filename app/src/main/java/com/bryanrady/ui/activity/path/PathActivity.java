@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.path.bezier.PathBezierActivity;
+import com.bryanrady.ui.activity.path.path_measure.PathMeasureActivity;
 
 /**
  * Created by wangqingbin on 2019/4/4.
@@ -48,8 +50,12 @@ public class PathActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btn_path_bezier:
+                intent.setClass(this, PathBezierActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btn_path_measure:
+                intent.setClass(this, PathMeasureActivity.class);
+                startActivity(intent);
                 break;
         }
     }

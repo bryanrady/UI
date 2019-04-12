@@ -44,7 +44,7 @@ public class TweenAnimationActivity extends AppCompatActivity implements View.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tween_animation_example);
+        setContentView(R.layout.activity_tween_animation);
 
         initView();
     }

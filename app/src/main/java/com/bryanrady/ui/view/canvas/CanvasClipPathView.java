@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Region;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -51,8 +52,9 @@ public class CanvasClipPathView extends View {
     private void clipPath(Canvas canvas){
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setDither(true);
         paint.setStyle(Paint.Style.FILL);
+        paint.setStrokeWidth(4);
+        paint.setTextSize(30);
 
         paint.setColor(Color.RED);
         Path path1 = new Path();
@@ -63,7 +65,7 @@ public class CanvasClipPathView extends View {
         path2.addCircle(300,200,100, Path.Direction.CCW);
         canvas.drawPath(path2,paint);
         canvas.clipPath(path1, Region.Op.INTERSECT);
-        canvas.clipPath(path2,Region.Op.INTERSECT);
+        canvas.clipPath(path2, Region.Op.INTERSECT);
         canvas.drawColor(Color.GREEN);
 
 

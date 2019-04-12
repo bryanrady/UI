@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bryanrady.ui">
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -111,6 +113,42 @@
         <activity android:name=".activity.path.PathActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.path.PathBaseActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.PathXxxToActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.PathAddXxxActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.PathFillTypeActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.PathOpActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierBaseActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierAdvancedActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierDragBubbleActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierWaveActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierRubbshActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.bezier.PathBezierGarbageActivity"
+            android:theme="@style/AppTheme"/>
+
+
+        <activity android:name=".activity.path.path_measure.PathMeasureActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.path_measure.PathMeasureBaseActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.path_measure.PathMeasureCircleRotateActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.path_measure.PathMeasureFaceLoadingActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.path_measure.PathMeasureLoadingActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.path.path_measure.PathMeasureWaveActivity"
             android:theme="@style/AppTheme"/>
 
 

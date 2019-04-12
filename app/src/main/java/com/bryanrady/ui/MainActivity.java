@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_flowlayout;
     private Button btn_paint;
     private Button btn_canvas;
+    private Button btn_path;
     private Button btn_animation;
 
     @Override
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_canvas = (Button) findViewById(R.id.btn_canvas);
         btn_canvas.setOnClickListener(this);
+
+
+        btn_path = (Button) findViewById(R.id.btn_path);
+        btn_path.setOnClickListener(this);
 
         btn_animation = (Button) findViewById(R.id.btn_animation);
         btn_animation.setOnClickListener(this);
