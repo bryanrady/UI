@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.bryanrady.ui.activity.event.DispatchEventActivity;
 import com.bryanrady.ui.activity.measure_layout.FlowLayoutActivity;
 import com.bryanrady.ui.activity.paint.PaintActivity;
 import com.bryanrady.ui.activity.canvas.CanvasActivity;
 import com.bryanrady.ui.activity.animation.AnimationActivity;
 import com.bryanrady.ui.activity.path.PathActivity;
+import com.bryanrady.ui.activity.screen.ScreenMatchActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_paint;
     private Button btn_canvas;
     private Button btn_path;
+    private Button btn_screen_match;
+    private Button btn_dispatch_event;
     private Button btn_animation;
 
     @Override
@@ -38,9 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_canvas = (Button) findViewById(R.id.btn_canvas);
         btn_canvas.setOnClickListener(this);
 
-
         btn_path = (Button) findViewById(R.id.btn_path);
         btn_path.setOnClickListener(this);
+
+        btn_screen_match = (Button) findViewById(R.id.btn_screen_match);
+        btn_screen_match.setOnClickListener(this);
+
+        btn_dispatch_event = (Button) findViewById(R.id.btn_dispatch_event);
+        btn_dispatch_event.setOnClickListener(this);
 
         btn_animation = (Button) findViewById(R.id.btn_animation);
         btn_animation.setOnClickListener(this);
@@ -64,6 +73,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_path:
                 intent.setClass(this, PathActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_screen_match:
+                intent.setClass(this, ScreenMatchActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_dispatch_event:
+                intent.setClass(this, DispatchEventActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_animation:

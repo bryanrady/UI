@@ -152,6 +152,11 @@
             android:theme="@style/AppTheme"/>
 
 
+        <activity android:name=".activity.screen.ScreenMatchActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.event.DispatchEventActivity"
+            android:theme="@style/AppTheme"/>
+
         <activity android:name=".activity.animation.AnimationActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.animation.TweenAnimationActivity"

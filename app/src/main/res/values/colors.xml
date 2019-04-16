@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="ligthColor">#f2c694</color>
+    <color name="green">#1AE66B</color>
+    <color name="grey">#C4C4C4</color>
+    <color name="red">#FF1111</color>
+    <color name="yellow">#F8F82A</color>
+    <color name="blue">#3385FF</color>
 </resources>

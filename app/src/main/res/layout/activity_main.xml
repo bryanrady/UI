@@ -39,7 +39,22 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="UI绘制——Path路径" />
-
+    <Button
+        android:id="@+id/btn_screen_match"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="最小宽度限定符进行屏幕适配" />
+    <Button
+        android:id="@+id/btn_dispatch_event"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="事件分发机制" />
     <Button
         android:id="@+id/btn_animation"
         android:layout_margin="5dp"
