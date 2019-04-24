@@ -19,15 +19,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.measure_layout.FlowLayoutActivity"
-            android:theme="@style/AppTheme"/>
-
 
         <activity android:name=".activity.BasePaintCanvasActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.BaseDrawActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.DrawCircleProgressBarActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.measure_layout.MeasureLayoutActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.measure_layout.AspectImageActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.measure_layout.FlowLayoutActivity"
             android:theme="@style/AppTheme"/>
 
 
@@ -154,8 +158,17 @@
 
         <activity android:name=".activity.screen.ScreenMatchActivity"
             android:theme="@style/AppTheme"/>
+
         <activity android:name=".activity.event.DispatchEventActivity"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.typeArray.TypeArrayActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.typeArray.TypeArrayCustomTextActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.typeArray.TypeArrayDoubleImageActivity"
+            android:theme="@style/AppTheme"/>
+
 
         <activity android:name=".activity.animation.AnimationActivity"
             android:theme="@style/AppTheme"/>
@@ -174,6 +187,15 @@
         <activity android:name=".activity.animation.FrameAnimationActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.animation.ObjectorAnimatorActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.svg.SvgActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.svg.SvgChinaMapActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.svg.SvgSearchAnimatorActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.svg.SvgPluginVectorDrawableActivity"
             android:theme="@style/AppTheme"/>
 
     </application>

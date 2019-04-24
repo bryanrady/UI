@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_svg_china_map"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Svg中国地图" />
+
+    <Button
+        android:id="@+id/btn_svg_search_animator"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Svg自定义搜索框动画" />
+
+    <Button
+        android:id="@+id/btn_svg_plugin"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="通过svg2VectorDrawable插件转换svg" />
+
+    <Button
+        android:id="@+id/btn_svg_other"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Svg其他控件" />
+
+</LinearLayout>
