@@ -12,6 +12,7 @@ import com.bryanrady.ui.activity.paint.PaintActivity;
 import com.bryanrady.ui.activity.canvas.CanvasActivity;
 import com.bryanrady.ui.activity.animation.AnimationActivity;
 import com.bryanrady.ui.activity.path.PathActivity;
+import com.bryanrady.ui.activity.recycler.RecyclerViewActivity;
 import com.bryanrady.ui.activity.screen.ScreenMatchActivity;
 import com.bryanrady.ui.activity.svg.SvgActivity;
 import com.bryanrady.ui.activity.typeArray.TypeArrayActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_dispatch_event;
     private Button btn_type_array;
     private Button btn_svg;
+    private Button btn_recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_svg = (Button) findViewById(R.id.btn_svg);
         btn_svg.setOnClickListener(this);
+
+        btn_recyclerView = (Button) findViewById(R.id.btn_recyclerView);
+        btn_recyclerView.setOnClickListener(this);
     }
 
     @Override
@@ -103,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_svg:
                 intent.setClass(this, SvgActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_recyclerView:
+                intent.setClass(this, RecyclerViewActivity.class);
                 startActivity(intent);
                 break;
         }
