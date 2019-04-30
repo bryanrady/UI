@@ -12,7 +12,7 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.SlideDeleteRecyclerViewAdapter;
-import com.bryanrady.ui.activity.recycler.decoration.LinearRecyclerItemDecoration;
+import com.bryanrady.ui.view.recycler.decoration.LinearRecyclerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

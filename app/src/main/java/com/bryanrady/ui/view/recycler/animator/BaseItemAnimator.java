@@ -1,4 +1,4 @@
-package com.bryanrady.ui.activity.recycler.animator;
+package com.bryanrady.ui.view.recycler.animator;
 
 import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;

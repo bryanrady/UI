@@ -22,6 +22,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     private Button btn_recycler_staggered_grid;
     private Button btn_recycler_slide_delete;
     private Button btn_recycler_drag_switch;
+    private Button btn_recycler_qq_slide_delete;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,6 +48,8 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
         btn_recycler_drag_switch = (Button) findViewById(R.id.btn_recycler_drag_switch);
         btn_recycler_drag_switch.setOnClickListener(this);
 
+        btn_recycler_qq_slide_delete = (Button) findViewById(R.id.btn_recycler_qq_slide_delete);
+        btn_recycler_qq_slide_delete.setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +74,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btn_recycler_drag_switch:
                 intent.setClass(this, DragSwitchRecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_recycler_qq_slide_delete:
+                intent.setClass(this, QQSlideRecyclerViewActivity.class);
                 startActivity(intent);
                 break;
         }

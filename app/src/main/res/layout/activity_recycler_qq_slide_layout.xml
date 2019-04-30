@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/slide_delete_recycler_view"
-        android:layout_weight="1"
+        android:id="@+id/qq_slide_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false"
+        android:fadeScrollbars="true"
         android:overScrollMode="never"/>
 </LinearLayout>

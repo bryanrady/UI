@@ -40,6 +40,7 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="RecyclerView滑动删除" />
+
     <Button
         android:id="@+id/btn_recycler_drag_switch"
         android:layout_margin="5dp"
@@ -48,5 +49,14 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="RecyclerView拖拽切换" />
+
+    <Button
+        android:id="@+id/btn_recycler_qq_slide_delete"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="RecyclerView仿qq滑动删除" />
 
 </LinearLayout>

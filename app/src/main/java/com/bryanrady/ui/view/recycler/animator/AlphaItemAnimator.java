@@ -1,4 +1,4 @@
-package com.bryanrady.ui.activity.recycler.animator;
+package com.bryanrady.ui.view.recycler.animator;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorCompat;
 import android.support.v7.widget.RecyclerView;

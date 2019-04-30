@@ -8,16 +8,15 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.LinearRecyclerViewAdapter;
-import com.bryanrady.ui.activity.recycler.animator.AlphaItemAnimator;
-import com.bryanrady.ui.activity.recycler.animator.RotateItemAnimator;
-import com.bryanrady.ui.activity.recycler.animator.ScaleItemAnimator;
-import com.bryanrady.ui.activity.recycler.animator.SlideItemAnimator;
-import com.bryanrady.ui.activity.recycler.decoration.LinearRecyclerItemDecoration;
+import com.bryanrady.ui.view.recycler.animator.AlphaItemAnimator;
+import com.bryanrady.ui.view.recycler.animator.RotateItemAnimator;
+import com.bryanrady.ui.view.recycler.animator.ScaleItemAnimator;
+import com.bryanrady.ui.view.recycler.animator.SlideItemAnimator;
+import com.bryanrady.ui.view.recycler.decoration.LinearRecyclerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

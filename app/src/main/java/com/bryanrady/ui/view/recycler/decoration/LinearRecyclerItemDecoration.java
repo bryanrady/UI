@@ -1,4 +1,4 @@
-package com.bryanrady.ui.activity.recycler.decoration;
+package com.bryanrady.ui.view.recycler.decoration;
 
 import android.content.Context;
 import android.graphics.Canvas;

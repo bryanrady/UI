@@ -5,16 +5,13 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.GridRecyclerViewAdapter;
-import com.bryanrady.ui.activity.recycler.adapter.LinearRecyclerViewAdapter;
-import com.bryanrady.ui.activity.recycler.decoration.GridRecyclerItemDecoration;
+import com.bryanrady.ui.view.recycler.decoration.GridRecyclerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
