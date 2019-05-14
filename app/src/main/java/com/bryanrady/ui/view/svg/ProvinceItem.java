@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Region;
+import android.util.Log;
 
 /**
  * Created by Administrator on 2019/4/23.

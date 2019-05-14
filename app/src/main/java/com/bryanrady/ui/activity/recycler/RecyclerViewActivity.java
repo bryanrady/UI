@@ -20,9 +20,11 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     private Button btn_recycler_linear_layout;
     private Button btn_recycler_grid_layout;
     private Button btn_recycler_staggered_grid;
+    private Button btn_recycler_custom_layout_manager;
     private Button btn_recycler_slide_delete;
     private Button btn_recycler_drag_switch;
     private Button btn_recycler_qq_slide_delete;
+    private Button btn_recycler_pull_refresh;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,6 +44,9 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
         btn_recycler_staggered_grid = (Button) findViewById(R.id.btn_recycler_staggered_grid);
         btn_recycler_staggered_grid.setOnClickListener(this);
 
+        btn_recycler_custom_layout_manager = (Button) findViewById(R.id.btn_recycler_custom_layout_manager);
+        btn_recycler_custom_layout_manager.setOnClickListener(this);
+
         btn_recycler_slide_delete = (Button) findViewById(R.id.btn_recycler_slide_delete);
         btn_recycler_slide_delete.setOnClickListener(this);
 
@@ -50,6 +55,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
 
         btn_recycler_qq_slide_delete = (Button) findViewById(R.id.btn_recycler_qq_slide_delete);
         btn_recycler_qq_slide_delete.setOnClickListener(this);
+
+        btn_recycler_pull_refresh = (Button) findViewById(R.id.btn_recycler_pull_refresh);
+        btn_recycler_pull_refresh.setOnClickListener(this);
+
     }
 
     @Override
@@ -68,6 +77,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
                 intent.setClass(this, StaggeredGridRecyclerViewActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.btn_recycler_custom_layout_manager:
+                intent.setClass(this, CardLayoutManagerActivity.class);
+                startActivity(intent);
+                break;
             case R.id.btn_recycler_slide_delete:
                 intent.setClass(this, SlideDeleteRecyclerViewActivity.class);
                 startActivity(intent);
@@ -78,6 +91,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btn_recycler_qq_slide_delete:
                 intent.setClass(this, QQSlideRecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_recycler_pull_refresh:
+                intent.setClass(this, PullRefreshRecyclerViewActivity.class);
                 startActivity(intent);
                 break;
         }

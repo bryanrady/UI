@@ -26,7 +26,6 @@ public class SvgActivity extends AppCompatActivity implements View.OnClickListen
     private Button btn_svg_china_map;
     private Button btn_svg_search_animator;
     private Button btn_svg_plugin;
-    private Button btn_svg_other;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,9 +45,6 @@ public class SvgActivity extends AppCompatActivity implements View.OnClickListen
         btn_svg_plugin = (Button) findViewById(R.id.btn_svg_plugin);
         btn_svg_plugin.setOnClickListener(this);
 
-        btn_svg_other = (Button) findViewById(R.id.btn_svg_other);
-        btn_svg_other.setOnClickListener(this);
-
     }
 
     @Override
@@ -64,10 +60,6 @@ public class SvgActivity extends AppCompatActivity implements View.OnClickListen
                 startActivity(intent);
                 break;
             case R.id.btn_svg_plugin:
-                intent.setClass(this, SvgPluginVectorDrawableActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_svg_other:
                 intent.setClass(this, SvgPluginVectorDrawableActivity.class);
                 startActivity(intent);
                 break;

@@ -32,13 +32,4 @@
         android:textAllCaps="false"
         android:text="通过svg2VectorDrawable插件转换svg" />
 
-    <Button
-        android:id="@+id/btn_svg_other"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="Svg其他控件" />
-
 </LinearLayout>

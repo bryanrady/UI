@@ -206,13 +206,16 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.StaggeredGridRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.CardLayoutManagerActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.SlideDeleteRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.DragSwitchRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.QQSlideRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
-
+        <activity android:name=".activity.recycler.PullRefreshRecyclerViewActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

@@ -23,6 +23,7 @@ public class SlideDeleteRecyclerViewAdapter extends RecyclerView.Adapter<SlideDe
 
     private Context mContext;
     private List<String> mList;
+    private OnItemClickListener mOnItemClickListener;
 
     public SlideDeleteRecyclerViewAdapter(Context context, List<String> list){
         this.mContext = context;
@@ -37,6 +38,12 @@ public class SlideDeleteRecyclerViewAdapter extends RecyclerView.Adapter<SlideDe
         notifyItemRemoved(position);
     }
 
+    public void dragMove(int fromPosition, int toPosition) {
+        String prev = mList.remove(fromPosition);
+        mList.add(toPosition > fromPosition ? toPosition - 1 : toPosition, prev);
+        notifyItemMoved(fromPosition, toPosition);
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
@@ -48,11 +55,41 @@ public class SlideDeleteRecyclerViewAdapter extends RecyclerView.Adapter<SlideDe
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int position) {
         viewHolder.mTvTitle.setText(mList.get(position));
+
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mOnItemClickListener != null){
+                    int pos = viewHolder.getLayoutPosition();
+                    mOnItemClickListener.onItemClick(viewHolder.itemView, pos);
+                }
+            }
+        });
+        viewHolder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                if(mOnItemClickListener != null) {
+                    int pos = viewHolder.getLayoutPosition();
+                    mOnItemClickListener.onItemLongClick(viewHolder.itemView, pos);
+                }
+                //表示此事件已经消费，不会触发单击事件
+                return true;
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return mList == null ? 0 : mList.size();
+    }
+
+    public interface OnItemClickListener{
+        void onItemClick(View view,int position);
+        void onItemLongClick(View view,int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+        this.mOnItemClickListener = listener;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{

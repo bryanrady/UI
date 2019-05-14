@@ -10,8 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bryanrady.ui.R;
-import com.bryanrady.ui.view.recycler.RecyclerUtils;
-import com.bryanrady.ui.view.recycler.SlideRecyclerItemView;
+import com.bryanrady.ui.view.recycler.drag.RecyclerUtils;
+import com.bryanrady.ui.view.recycler.drag.SlideRecyclerItemView;
 
 import java.util.List;
 

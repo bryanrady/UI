@@ -9,8 +9,11 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.view.View;
+import android.widget.Toast;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.recycler.adapter.LinearRecyclerViewAdapter;
 import com.bryanrady.ui.activity.recycler.adapter.SlideDeleteRecyclerViewAdapter;
 import com.bryanrady.ui.view.recycler.decoration.LinearRecyclerItemDecoration;
 
@@ -66,6 +69,18 @@ public class SlideDeleteRecyclerViewActivity extends AppCompatActivity {
 
         mRecyclerView.addItemDecoration(new LinearRecyclerItemDecoration(this));
 
+        mAdapter.setOnItemClickListener(new SlideDeleteRecyclerViewAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(SlideDeleteRecyclerViewActivity.this,"click " + position + " item", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onItemLongClick(View view, int position) {
+                Toast.makeText(SlideDeleteRecyclerViewActivity.this,"long click " + position + " item", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         initCallBack();
 
         mItemTouchHelper = new ItemTouchHelper(mCallBack);
@@ -88,9 +103,9 @@ public class SlideDeleteRecyclerViewActivity extends AppCompatActivity {
                  *      第一个参数是拖拽的标记，    在这里我设置不可拖拽Item（传入0）
                  *      第二个参数是滑动的标记。    可进行左右滑动Item
                  */
-                return makeMovementFlags(0,ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT);
+                return makeMovementFlags(ItemTouchHelper.DOWN | ItemTouchHelper.UP,ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT);
                 //试了这两个 没什么区别
-            //    return makeMovementFlags(0,ItemTouchHelper.START | ItemTouchHelper.END);
+            //    return makeMovementFlags(ItemTouchHelper.DOWN | ItemTouchHelper.UP,ItemTouchHelper.START | ItemTouchHelper.END);
             }
 
             /**
@@ -102,7 +117,8 @@ public class SlideDeleteRecyclerViewActivity extends AppCompatActivity {
              */
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
-                return false;
+                mAdapter.dragMove(viewHolder.getAdapterPosition(), target.getAdapterPosition());
+                return true;
             }
 
             /**
@@ -122,7 +138,7 @@ public class SlideDeleteRecyclerViewActivity extends AppCompatActivity {
              */
             @Override
             public boolean isLongPressDragEnabled() {
-                return false;
+                return true;
             }
 
             /**

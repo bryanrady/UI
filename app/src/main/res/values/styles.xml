@@ -2,11 +2,24 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <!-- ActionBar主题颜色 -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <!--状态栏的颜色  5.0以后-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--系统中，子空间，复选框，单选按钮，选中时的颜色 如checkbox等  5.0以后-->
         <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!--窗体的背景色-->
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
+
+        <!--&lt;!&ndash;窗体无标题栏&ndash;&gt;-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--&lt;!&ndash;无actionbar&ndash;&gt;-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--&lt;!&ndash;取消状态栏,也就是全屏显示&ndash;&gt;-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+
     </style>
 
     <style name="AppTheme.NoActionBar" parent="AppTheme">

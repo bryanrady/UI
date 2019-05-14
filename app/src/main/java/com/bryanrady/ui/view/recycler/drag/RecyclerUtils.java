@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.recycler;
+package com.bryanrady.ui.view.recycler.drag;
 
 import android.content.Context;
 import android.content.res.Resources;

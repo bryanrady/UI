@@ -42,7 +42,7 @@ public class SvgChinaMapView extends View {
     private final int LOAD_COMPLETE = 0x001;
     private List<ProvinceItem> mProvinceItemList;
     private RectF mMapRect;
-    private float mScale = 1.0f;
+//    private float mScale = 1.0f;
     private ProvinceItem mSelectItem; //点击的Item
 
     public SvgChinaMapView(Context context) {
@@ -56,6 +56,7 @@ public class SvgChinaMapView extends View {
 
     public SvgChinaMapView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
     }
 
     private void init(Context context) {
@@ -71,6 +72,9 @@ public class SvgChinaMapView extends View {
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case LOAD_COMPLETE:
+                    if (mProvinceItemList == null) {
+                        return;
+                    }
                     postInvalidate();
                     break;
             }
@@ -135,7 +139,8 @@ public class SvgChinaMapView extends View {
                 int y = (int)event.getY();
                 if (mProvinceItemList != null) {
                     for (ProvinceItem item : mProvinceItemList) {
-                        if(item.isTouch(x/mScale,y/mScale)){
+                        if(item.isTouch(x,y)){
+                    //        if(item.isTouch(x/mScale,y/mScale)){
                             mSelectItem = item;
                             postInvalidate();
                         }
@@ -151,14 +156,16 @@ public class SvgChinaMapView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         //获取当前控件的宽高
         int width = MeasureSpec.getSize(widthMeasureSpec);
-        int heigth = MeasureSpec.getSize(heightMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
 
         // 因为svg是用px做的单位，会有适配问题 所以要进行缩放
-        if (mMapRect != null) {
-            double mapWidth = mMapRect.width();
-            mScale= (float) (width / mapWidth);
-        }
-        setMeasuredDimension(width,heigth);
+        Log.d("wangqingbin","mMapRect=="+mMapRect);
+        Log.d("wangqingbin","width=="+width);
+//        if (mMapRect != null) {
+//            double mapWidth = mMapRect.width();
+//            mScale= (float) (width / mapWidth);
+//        }
+        setMeasuredDimension(width,height);
     }
 
     @Override
@@ -166,7 +173,8 @@ public class SvgChinaMapView extends View {
         super.onDraw(canvas);
         if(mProvinceItemList != null){
             canvas.save();
-            canvas.scale(mScale,mScale);
+        //    Log.d("wangqingbin","mScale=="+mScale);
+        //    canvas.scale(mScale,mScale);
 
             for (ProvinceItem item : mProvinceItemList){
                 item.drawProvinceItem(canvas, mPaint,false);
