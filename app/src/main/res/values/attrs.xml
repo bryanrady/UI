@@ -79,5 +79,9 @@
         <attr name="scroll_refresh_header_view" format="reference" />
         <attr name="content_view" format="reference" />
     </declare-styleable>
+    
+    <declare-styleable name="BehaviorCoordinatorLayout">
+        <attr name="layout_behavior" format="string"/>
+    </declare-styleable>
 
 </resources>

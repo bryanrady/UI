@@ -216,6 +216,19 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.PullRefreshRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.SlideConflictRecyclerViewActivity"
+            android:theme="@style/AppTheme"/>
+
+
+
+        <activity android:name=".activity.custom.CustomViewActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.QQZoomHeaderActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.BehaviorCoordinatorLayoutActivity"
+            android:theme="@style/AppTheme"/>
+
+
     </application>
 
 </manifest>

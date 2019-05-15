@@ -1,82 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_recycler_linear_layout"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="线性布局和自定义动画" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_recycler_grid_layout"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="网格布局和自定义分割线" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_recycler_linear_layout"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="线性布局和自定义动画" />
 
-    <Button
-        android:id="@+id/btn_recycler_staggered_grid"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="瀑布流布局" />
+            <Button
+                android:id="@+id/btn_recycler_grid_layout"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="网格布局和自定义分割线" />
 
-    <Button
-        android:id="@+id/btn_recycler_custom_layout_manager"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="自定义布局管理器—卡片布局" />
+            <Button
+                android:id="@+id/btn_recycler_staggered_grid"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="瀑布流布局" />
 
-    <Button
-        android:id="@+id/btn_recycler_slide_delete"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="线性布局滑动删除和拖拽切换" />
+            <Button
+                android:id="@+id/btn_recycler_custom_layout_manager"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="自定义布局管理器—卡片布局" />
 
-    <Button
-        android:id="@+id/btn_recycler_drag_switch"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="网格布局拖拽切换" />
+            <Button
+                android:id="@+id/btn_recycler_slide_delete"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="线性布局滑动删除和拖拽切换" />
 
-    <Button
-        android:id="@+id/btn_recycler_qq_slide_delete"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="线性布局仿qq滑动菜单" />
+            <Button
+                android:id="@+id/btn_recycler_drag_switch"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="网格布局拖拽切换" />
 
-    <Button
-        android:id="@+id/btn_recycler_pull_refresh"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="线性布局下拉刷新和上拉加载" />
+            <Button
+                android:id="@+id/btn_recycler_qq_slide_delete"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="线性布局仿qq滑动菜单" />
 
+            <Button
+                android:id="@+id/btn_recycler_pull_refresh"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="线性布局下拉刷新和上拉加载" />
 
+            <Button
+                android:id="@+id/btn_recycler_nesting_slide_conflict"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="RecyclerView嵌套滑动冲突问题" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

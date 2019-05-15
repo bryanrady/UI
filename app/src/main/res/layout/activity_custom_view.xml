@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_qq_zoom_header"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="QQ空间之打造个性化可拉伸头部控件" />
+
+    <Button
+        android:id="@+id/btn_coordinator_nested"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="CoordinatorLayout原理应用+NestedScrolling组合完成下拉特效" />
+
+    <Button
+        android:id="@+id/btn_path_measure"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Path辅助类PathMeasure" />
+
+</LinearLayout>

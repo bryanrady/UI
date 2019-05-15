@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- ActionBar主题颜色 -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <!--状态栏的颜色  5.0以后-->

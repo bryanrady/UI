@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
-import com.bryanrady.ui.activity.path.bezier.PathBezierActivity;
-import com.bryanrady.ui.activity.path.path_measure.PathMeasureActivity;
 
 /**
  * Created by wangqingbin on 2019/4/4.
@@ -25,6 +23,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     private Button btn_recycler_drag_switch;
     private Button btn_recycler_qq_slide_delete;
     private Button btn_recycler_pull_refresh;
+    private Button btn_recycler_nesting_slide_conflict;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,6 +57,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
 
         btn_recycler_pull_refresh = (Button) findViewById(R.id.btn_recycler_pull_refresh);
         btn_recycler_pull_refresh.setOnClickListener(this);
+
+        btn_recycler_nesting_slide_conflict = (Button) findViewById(R.id.btn_recycler_nesting_slide_conflict);
+        btn_recycler_nesting_slide_conflict.setOnClickListener(this);
+
 
     }
 
@@ -95,6 +98,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btn_recycler_pull_refresh:
                 intent.setClass(this, PullRefreshRecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_recycler_nesting_slide_conflict:
+                intent.setClass(this, SlideConflictRecyclerViewActivity.class);
                 startActivity(intent);
                 break;
         }

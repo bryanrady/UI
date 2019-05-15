@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.bryanrady.ui.activity.custom.CustomViewActivity;
 import com.bryanrady.ui.activity.event.DispatchEventActivity;
 import com.bryanrady.ui.activity.measure_layout.MeasureLayoutActivity;
 import com.bryanrady.ui.activity.paint.PaintActivity;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_type_array;
     private Button btn_svg;
     private Button btn_recyclerView;
+    private Button btn_customView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +70,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_recyclerView = (Button) findViewById(R.id.btn_recyclerView);
         btn_recyclerView.setOnClickListener(this);
+
+        btn_customView = (Button) findViewById(R.id.btn_customView);
+        btn_customView.setOnClickListener(this);
+
     }
 
     @Override
@@ -112,6 +118,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_recyclerView:
                 intent.setClass(this, RecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_customView:
+                intent.setClass(this, CustomViewActivity.class);
                 startActivity(intent);
                 break;
         }
