@@ -20,7 +20,7 @@ import java.util.List;
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class GridLayoutRecyclerViewActivity extends AppCompatActivity{
+public class ItemDecorationRecyclerViewActivity extends AppCompatActivity{
 
     private RecyclerView mRecyclerView;
     private GridRecyclerViewAdapter mAdapter;
@@ -58,12 +58,12 @@ public class GridLayoutRecyclerViewActivity extends AppCompatActivity{
         mAdapter.setOnItemClickListener(new GridRecyclerViewAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Toast.makeText(GridLayoutRecyclerViewActivity.this,"click " + position + " item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ItemDecorationRecyclerViewActivity.this,"click " + position + " item", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onItemLongClick(View view, int position) {
-                Toast.makeText(GridLayoutRecyclerViewActivity.this,"long click " + position + " item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ItemDecorationRecyclerViewActivity.this,"long click " + position + " item", Toast.LENGTH_SHORT).show();
             }
         });
     }

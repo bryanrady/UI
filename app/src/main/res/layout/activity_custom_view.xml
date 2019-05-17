@@ -23,13 +23,4 @@
         android:textAllCaps="false"
         android:text="CoordinatorLayout原理应用+NestedScrolling组合完成下拉特效" />
 
-    <Button
-        android:id="@+id/btn_path_measure"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="Path辅助类PathMeasure" />
-
 </LinearLayout>

@@ -31,8 +31,19 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:28.0.0"
     implementation "com.android.support:cardview-v7:28.0.0"
 
+    //一个简单的开源 Android 工具类库，提供许多常用的类帮助我们开发程序
     implementation 'com.wx.android.common:common:1.0.1'
-
+    //SVG   矢量图适配 灵活的尺寸设置以及着色等功能的TextView
     implementation 'com.github.woxingxiao:VectorCompatTextView:2.3'
 
+    //VLayout
+    implementation 'com.alibaba.android:vlayout:1.0.3@aar'
+    //RecyclerView一款强大的适配器 https://blog.csdn.net/chehec2010/article/details/83902263
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+    //文字跑马灯
+    implementation 'com.sunfusheng:marqueeview:1.3.1'
+    //图片轮播
+    implementation 'com.youth.banner:banner:1.4.9'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }

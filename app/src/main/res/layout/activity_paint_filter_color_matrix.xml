@@ -48,6 +48,6 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="色彩的投射运算" />
+        android:text="色彩的旋转运算" />
 
 </LinearLayout>

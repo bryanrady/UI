@@ -1,21 +1,14 @@
-package com.bryanrady.ui.view.recycler.layout_manager;
+package com.bryanrady.ui.view.recycler.layout_manager.card;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 
 /**
- * 自定义布局管理器
+ * 自定义LayoutManager实现卡片标签式布局
  * https://blog.csdn.net/qibin0506/article/details/52676670
- *
- * 自定义LayoutManager主要要求我们完成三件事情：
- *          计算每个ItemView的位置；
- *          处理滑动事件；
- *          缓存并重用ItemView；
- *
- *          而我们比较重要的工作是在onLayoutChildern() 这个回调方法中完成的。
  */
-
 public class CardLayoutManager extends RecyclerView.LayoutManager {
 
     private static final int DEFAULT_GROUP_SIZE = 5;
@@ -50,16 +43,20 @@ public class CardLayoutManager extends RecyclerView.LayoutManager {
      */
     @Override
     public RecyclerView.LayoutParams generateDefaultLayoutParams() {
-        RecyclerView.LayoutParams layoutParams = new RecyclerView.LayoutParams(
-                RecyclerView.LayoutParams.WRAP_CONTENT, RecyclerView.LayoutParams.WRAP_CONTENT);
-        return layoutParams;
+        return new RecyclerView.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
     }
 
     @Override
     public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
-        if (getItemCount() <= 0 || state.isPreLayout()) { return;}
+        if(getItemCount() <= 0){
+            return;
+        }
+        if(state.isPreLayout()){
+            return;
+        }
 
         detachAndScrapAttachedViews(recycler);
+
         View first = recycler.getViewForPosition(0);
         measureChildWithMargins(first, 0, 0);
         int itemWidth = getDecoratedMeasuredWidth(first);

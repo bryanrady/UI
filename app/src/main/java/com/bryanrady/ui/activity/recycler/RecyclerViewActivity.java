@@ -15,9 +15,9 @@ import com.bryanrady.ui.R;
 
 public class RecyclerViewActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private Button btn_recycler_staggered_grid;
     private Button btn_recycler_linear_layout;
     private Button btn_recycler_grid_layout;
-    private Button btn_recycler_staggered_grid;
     private Button btn_recycler_custom_layout_manager;
     private Button btn_recycler_slide_delete;
     private Button btn_recycler_drag_switch;
@@ -34,14 +34,14 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
 
     private void initView() {
 
+        btn_recycler_staggered_grid = (Button) findViewById(R.id.btn_recycler_staggered_grid);
+        btn_recycler_staggered_grid.setOnClickListener(this);
+
         btn_recycler_linear_layout = (Button) findViewById(R.id.btn_recycler_linear_layout);
         btn_recycler_linear_layout.setOnClickListener(this);
 
         btn_recycler_grid_layout = (Button) findViewById(R.id.btn_recycler_grid_layout);
         btn_recycler_grid_layout.setOnClickListener(this);
-
-        btn_recycler_staggered_grid = (Button) findViewById(R.id.btn_recycler_staggered_grid);
-        btn_recycler_staggered_grid.setOnClickListener(this);
 
         btn_recycler_custom_layout_manager = (Button) findViewById(R.id.btn_recycler_custom_layout_manager);
         btn_recycler_custom_layout_manager.setOnClickListener(this);
@@ -68,20 +68,20 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         Intent intent = new Intent();
         switch (v.getId()){
-            case R.id.btn_recycler_linear_layout:
-                intent.setClass(this, LinearLayoutRecyclerViewActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_recycler_grid_layout:
-                intent.setClass(this, GridLayoutRecyclerViewActivity.class);
-                startActivity(intent);
-                break;
             case R.id.btn_recycler_staggered_grid:
                 intent.setClass(this, StaggeredGridRecyclerViewActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.btn_recycler_linear_layout:
+                intent.setClass(this, ItemAnimatorRecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_recycler_grid_layout:
+                intent.setClass(this, ItemDecorationRecyclerViewActivity.class);
+                startActivity(intent);
+                break;
             case R.id.btn_recycler_custom_layout_manager:
-                intent.setClass(this, CardLayoutManagerActivity.class);
+                intent.setClass(this, LayoutManagerRecyclerViewActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_slide_delete:

@@ -19,7 +19,6 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
 
     private Button btn_qq_zoom_header;
     private Button btn_coordinator_nested;
-    private Button btn_path_measure;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,9 +35,6 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
         btn_coordinator_nested = (Button) findViewById(R.id.btn_coordinator_nested);
         btn_coordinator_nested.setOnClickListener(this);
 
-        btn_path_measure = (Button) findViewById(R.id.btn_path_measure);
-        btn_path_measure.setOnClickListener(this);
-
     }
 
     @Override
@@ -51,10 +47,6 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.btn_coordinator_nested:
                 intent.setClass(this, BehaviorCoordinatorLayoutActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_path_measure:
-                intent.setClass(this, PathMeasureActivity.class);
                 startActivity(intent);
                 break;
         }

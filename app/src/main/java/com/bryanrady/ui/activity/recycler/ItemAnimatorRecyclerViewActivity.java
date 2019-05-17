@@ -25,7 +25,7 @@ import java.util.List;
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class LinearLayoutRecyclerViewActivity extends AppCompatActivity implements View.OnClickListener{
+public class ItemAnimatorRecyclerViewActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button btn_add_item,btn_delete_item,btn_update_item;
     private Button btn_alpha_animator_item,btn_rotate_animator_item,
@@ -88,12 +88,12 @@ public class LinearLayoutRecyclerViewActivity extends AppCompatActivity implemen
         mAdapter.setOnItemClickListener(new LinearRecyclerViewAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Toast.makeText(LinearLayoutRecyclerViewActivity.this,"click " + position + " item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ItemAnimatorRecyclerViewActivity.this,"click " + position + " item", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onItemLongClick(View view, int position) {
-                Toast.makeText(LinearLayoutRecyclerViewActivity.this,"long click " + position + " item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ItemAnimatorRecyclerViewActivity.this,"long click " + position + " item", Toast.LENGTH_SHORT).show();
             }
         });
     }

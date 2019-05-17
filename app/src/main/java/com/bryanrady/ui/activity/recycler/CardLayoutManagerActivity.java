@@ -9,10 +9,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bryanrady.ui.MainActivity;
 import com.bryanrady.ui.R;
-import com.bryanrady.ui.view.recycler.layout_manager.CardItemView;
-import com.bryanrady.ui.view.recycler.layout_manager.CardLayoutManager;
+import com.bryanrady.ui.view.recycler.layout_manager.card.CardItemView;
+import com.bryanrady.ui.view.recycler.layout_manager.card.CardLayoutManager;
 
 import java.util.Random;
 

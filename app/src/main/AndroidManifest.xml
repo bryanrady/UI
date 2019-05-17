@@ -200,13 +200,19 @@
 
         <activity android:name=".activity.recycler.RecyclerViewActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.recycler.LinearLayoutRecyclerViewActivity"
+        <activity android:name=".activity.recycler.ItemAnimatorRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.recycler.GridLayoutRecyclerViewActivity"
+        <activity android:name=".activity.recycler.ItemDecorationRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.StaggeredGridRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.LayoutManagerRecyclerViewActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.CardLayoutManagerActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.vlayout.VirtualLayoutBaseActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.vlayout.taobao.VirtualLayoutTaoBaoActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.SlideDeleteRecyclerViewActivity"
             android:theme="@style/AppTheme"/>

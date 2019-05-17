@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.recycler.layout_manager;
+package com.bryanrady.ui.view.recycler.layout_manager.card;
 
 import android.content.Context;
 import android.content.res.TypedArray;

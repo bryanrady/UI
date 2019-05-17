@@ -14,85 +14,76 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_recycler_staggered_grid"
+                android:id="@+id/btn_recycler_virtual_layout_base"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView瀑布流布局" />
+                android:text="阿里框架VLayout基本使用" />
 
             <Button
-                android:id="@+id/btn_recycler_linear_layout"
+                android:id="@+id/btn_recycler_virtual_layout_taobao"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView自定义ItemAnimator" />
+                android:text="VLayout实现天猫、淘宝商品首页" />
 
             <Button
-                android:id="@+id/btn_recycler_grid_layout"
+                android:id="@+id/btn_recycler_flow_layout_manager"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView自定义ItemDecoration" />
+                android:text="自定义LayoutManager——实现流式布局" />
 
             <Button
-                android:id="@+id/btn_recycler_custom_layout_manager"
+                android:id="@+id/btn_recycler_douyin_layout_manager"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView自定义LayoutManager" />
+                android:text="自定义LayoutManager——实现抖音主界面" />
 
             <Button
-                android:id="@+id/btn_recycler_slide_delete"
+                android:id="@+id/btn_recycler_tantan_layout_manager"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView滑动删除和拖拽切换" />
+                android:text="自定义LayoutManager——实现探探主界面" />
 
             <Button
-                android:id="@+id/btn_recycler_drag_switch"
+                android:id="@+id/btn_recycler_echelon_layout_manager"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView网格布局拖拽切换" />
+                android:text="自定义LayoutManager——图片阶层布局" />
 
             <Button
-                android:id="@+id/btn_recycler_qq_slide_delete"
+                android:id="@+id/btn_recycler_discover_layout_manager"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView线性布局仿qq滑动菜单" />
+                android:text="自定义LayoutManager——图片探索布局" />
 
             <Button
-                android:id="@+id/btn_recycler_pull_refresh"
+                android:id="@+id/btn_recycler_card_layout_manager"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="RecyclerView下拉刷新和上拉加载" />
-
-            <Button
-                android:id="@+id/btn_recycler_nesting_slide_conflict"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="RecyclerView多个嵌套滑动冲突问题" />
+                android:text="自定义LayoutManager——实现卡片蜂巢布局" />
         </LinearLayout>
 
     </ScrollView>
