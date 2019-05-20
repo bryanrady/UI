@@ -50,12 +50,13 @@ public class FlowLayoutManager2 extends RecyclerView.LayoutManager {
             View view = recycler.getViewForPosition(i);
             addView(view);
             measureChildWithMargins(view, 0, 0);
+
+            int cWidth = getDecoratedMeasuredWidth(view);
+            int cHeight = getDecoratedMeasuredHeight(view);
             Rect childFrame = mChildFrames.get(i);
             if (childFrame == null) {
                 childFrame = new Rect();
             }
-            int cWidth = getDecoratedMeasuredWidth(view);
-            int cHeight = getDecoratedMeasuredHeight(view);
             if (currentX + cWidth > getWidth()) {
                 currentX = cWidth;
                 currentY += cHeight;

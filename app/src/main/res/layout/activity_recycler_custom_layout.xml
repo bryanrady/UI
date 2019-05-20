@@ -83,7 +83,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="自定义LayoutManager——实现卡片蜂巢布局" />
+                android:text="自定义LayoutManager——实现卡片布局" />
         </LinearLayout>
 
     </ScrollView>

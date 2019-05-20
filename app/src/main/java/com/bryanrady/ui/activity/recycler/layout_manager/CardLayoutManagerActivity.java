@@ -1,4 +1,4 @@
-package com.bryanrady.ui.activity.recycler;
+package com.bryanrady.ui.activity.recycler.layout_manager;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,8 +32,8 @@ public class CardLayoutManagerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler_card_layout_manager);
-        mRecyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
+        setContentView(R.layout.activity_recycler_card_layout);
+        mRecyclerView = (RecyclerView) findViewById(R.id.card_layout_recycler_view);
         init();
     }
 

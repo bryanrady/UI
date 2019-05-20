@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.recycler.layout_manager.CardLayoutManagerActivity;
+import com.bryanrady.ui.activity.recycler.layout_manager.FlowLayoutManagerActivity;
 import com.bryanrady.ui.activity.recycler.vlayout.VirtualLayoutBaseActivity;
 import com.bryanrady.ui.activity.recycler.vlayout.taobao.VirtualLayoutTaoBaoActivity;
 
@@ -29,7 +31,7 @@ public class LayoutManagerRecyclerViewActivity extends AppCompatActivity impleme
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler_custom_layout_manager);
+        setContentView(R.layout.activity_recycler_custom_layout);
         initView();
     }
 
@@ -74,7 +76,7 @@ public class LayoutManagerRecyclerViewActivity extends AppCompatActivity impleme
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_flow_layout_manager:
-                intent.setClass(this, VirtualLayoutTaoBaoActivity.class);
+                intent.setClass(this, FlowLayoutManagerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_douyin_layout_manager:
