@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.layout_manager.CardLayoutManagerActivity;
 import com.bryanrady.ui.activity.recycler.layout_manager.FlowLayoutManagerActivity;
+import com.bryanrady.ui.activity.recycler.layout_manager.ViewPagerLayoutManagerActivity;
 import com.bryanrady.ui.activity.recycler.vlayout.VirtualLayoutBaseActivity;
 import com.bryanrady.ui.activity.recycler.vlayout.taobao.VirtualLayoutTaoBaoActivity;
 
@@ -80,7 +81,7 @@ public class LayoutManagerRecyclerViewActivity extends AppCompatActivity impleme
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_douyin_layout_manager:
-                intent.setClass(this, VirtualLayoutTaoBaoActivity.class);
+                intent.setClass(this, ViewPagerLayoutManagerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_tantan_layout_manager:

@@ -125,31 +125,16 @@ public class FlowLayoutManager extends RecyclerView.LayoutManager {
         //得到当前显示在屏幕上的 也就是可见的RecyclerView的部分item的区域信息
         Rect curVisibleRect = new Rect(0,mOffsetY,getWidth(),mOffsetY + getHeight());
 
-        //将滑出屏幕的(也就是不可见的)Item进行回收
-//        for (int i = 0;i < getItemCount(); i++){
-//
-//            Rect itemFrame = mAllItemFrames.get(i);
-//            View item = recycler.getViewForPosition(i);
-//
-//            if(!Rect.intersects(curVisibleRect,itemFrame)){
-//                //如果当前item的Rect不在当前RecyclerView中可见的Rect的时候，那就进行回收
-//                removeAndRecycleView(item,recycler);
-//
-//            }else{
-//                //如果当前item在屏幕中进行显示，也就是说是当前可见的,那就重新进行测量摆放
-//                measureChildWithMargins(item,0,0);
-//                addView(item);
-//                layoutDecoratedWithMargins(item,itemFrame.left, itemFrame.top - mOffsetY,
-//                        itemFrame.right,itemFrame.bottom - mOffsetY);
-//            }
-//        }
-
-
         //将滑出屏幕的view进行回收
-        for (int i=0;i<getChildCount();i++){
+        Rect childFrame = new Rect();
+        for (int i=0;i < getChildCount();i++){
             View childView = getChildAt(i);
-            Rect child=mAllItemFrames.get(i);
-            if (!Rect.intersects(curVisibleRect, child)) {
+        //    int position = getPosition(childView);
+            childFrame.left = childView.getLeft();
+            childFrame.top = getDecoratedTop(childView);
+            childFrame.right = getDecoratedRight(childView);
+            childFrame.bottom = getDecoratedBottom(childView);
+            if (!Rect.intersects(curVisibleRect, childFrame)) {
                 removeAndRecycleView(childView, recycler);
             }
         }

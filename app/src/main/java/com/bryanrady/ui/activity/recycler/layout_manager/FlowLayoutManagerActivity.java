@@ -32,14 +32,14 @@ public class FlowLayoutManagerActivity extends AppCompatActivity {
 
     private void init() {
         mRecyclerView.setLayoutManager(new FlowLayoutManager());
-        mRecyclerView.setAdapter(new FlowLayoutRecyclerViewAdapter());
+        mRecyclerView.setAdapter(new MyAdapter());
     }
 
-    public class FlowLayoutRecyclerViewAdapter extends RecyclerView.Adapter<FlowLayoutRecyclerViewAdapter.ViewHolder>{
+    public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
         private String[] mData = new String[300];
 
-        public FlowLayoutRecyclerViewAdapter(){
+        public MyAdapter(){
             initData();
         }
 
