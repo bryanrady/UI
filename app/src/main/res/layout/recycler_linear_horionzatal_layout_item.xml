@@ -3,7 +3,9 @@
     android:orientation="vertical"
     android:layout_width="@dimen/dp_80"
     android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:background="@color/blue"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
     <TextView
         android:id="@+id/tv_linear_recycler_item_title"
         android:layout_width="match_parent"

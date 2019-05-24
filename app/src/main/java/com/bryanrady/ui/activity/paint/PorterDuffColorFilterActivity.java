@@ -1,15 +1,15 @@
 package com.bryanrady.ui.activity.paint;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.paint.PorteDuffColorFilter;
 
 /**
  * Created by wqb on 2018/6/27.
  */
 
-public class PorterDuffColorFilterActivity extends AppCompatActivity {
+public class PorterDuffColorFilterActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

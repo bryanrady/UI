@@ -16,7 +16,6 @@
 package com.bryanrady.ui.activity.path.bezier;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
@@ -24,6 +23,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.path.bezier.PathBezierView;
 import com.wx.android.common.util.ToastUtils;
 import com.wx.android.common.util.VibratorUtils;
@@ -33,7 +33,7 @@ import com.wx.android.common.util.VibratorUtils;
  *
  * @author venshine
  */
-public class PathBezierAdvancedActivity extends AppCompatActivity {
+public class PathBezierAdvancedActivity extends StatusBarBaseActivity {
 
     private PathBezierView mBezierView;
 

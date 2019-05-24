@@ -3,7 +3,27 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/btn_type_array"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="自定义属性" />
+
+    <Button
+        android:id="@+id/btn_material_design"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Material Design 风格" />
 
     <Button
         android:id="@+id/btn_qq_zoom_header"

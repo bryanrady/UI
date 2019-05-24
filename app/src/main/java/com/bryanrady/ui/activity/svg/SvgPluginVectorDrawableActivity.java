@@ -1,11 +1,11 @@
 package com.bryanrady.ui.activity.svg;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.xw.repo.VectorCompatTextView;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -16,7 +16,7 @@ import java.io.File;
  * Created by wqb on 2018/6/24.
  */
 
-public class SvgPluginVectorDrawableActivity extends AppCompatActivity {
+public class SvgPluginVectorDrawableActivity extends StatusBarBaseActivity {
 
 //    Vector图像刚发布的时候，是只支持Android 5.0+的设备
 //    不过自从AppCompat 23.2之后，我们只需要引入com.android.support:appcompat-v7:23.2.0以上的版本 的兼容包，Vector可以使用于Android 2.1以上的所有系统。

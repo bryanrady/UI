@@ -1,7 +1,6 @@
 package com.bryanrady.ui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,22 +14,22 @@ import com.bryanrady.ui.activity.animation.AnimationActivity;
 import com.bryanrady.ui.activity.path.PathActivity;
 import com.bryanrady.ui.activity.recycler.RecyclerViewActivity;
 import com.bryanrady.ui.activity.screen.ScreenMatchActivity;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.activity.svg.SvgActivity;
-import com.bryanrady.ui.activity.typeArray.TypeArrayActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button btn_measure_layout;
     private Button btn_paint;
     private Button btn_canvas;
     private Button btn_path;
-    private Button btn_animation;
-    private Button btn_screen_match;
-    private Button btn_dispatch_event;
-    private Button btn_type_array;
     private Button btn_svg;
+    private Button btn_animation;
     private Button btn_recyclerView;
     private Button btn_customView;
+    private Button btn_status_bar;
+    private Button btn_screen_match;
+    private Button btn_dispatch_event;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,26 +52,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_path = (Button) findViewById(R.id.btn_path);
         btn_path.setOnClickListener(this);
 
-        btn_animation = (Button) findViewById(R.id.btn_animation);
-        btn_animation.setOnClickListener(this);
-
-        btn_screen_match = (Button) findViewById(R.id.btn_screen_match);
-        btn_screen_match.setOnClickListener(this);
-
-        btn_dispatch_event = (Button) findViewById(R.id.btn_dispatch_event);
-        btn_dispatch_event.setOnClickListener(this);
-
-        btn_type_array = (Button) findViewById(R.id.btn_type_array);
-        btn_type_array.setOnClickListener(this);
-
         btn_svg = (Button) findViewById(R.id.btn_svg);
         btn_svg.setOnClickListener(this);
+
+        btn_animation = (Button) findViewById(R.id.btn_animation);
+        btn_animation.setOnClickListener(this);
 
         btn_recyclerView = (Button) findViewById(R.id.btn_recyclerView);
         btn_recyclerView.setOnClickListener(this);
 
         btn_customView = (Button) findViewById(R.id.btn_customView);
         btn_customView.setOnClickListener(this);
+
+        btn_status_bar = (Button) findViewById(R.id.btn_status_bar);
+        btn_status_bar.setOnClickListener(this);
+
+        btn_screen_match = (Button) findViewById(R.id.btn_screen_match);
+        btn_screen_match.setOnClickListener(this);
+
+        btn_dispatch_event = (Button) findViewById(R.id.btn_dispatch_event);
+        btn_dispatch_event.setOnClickListener(this);
 
     }
 
@@ -96,24 +95,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, PathActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_animation:
-                intent.setClass(this, AnimationActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_screen_match:
-                intent.setClass(this, ScreenMatchActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_dispatch_event:
-                intent.setClass(this, DispatchEventActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_type_array:
-                intent.setClass(this, TypeArrayActivity.class);
-                startActivity(intent);
-                break;
             case R.id.btn_svg:
                 intent.setClass(this, SvgActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_animation:
+                intent.setClass(this, AnimationActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_recyclerView:
@@ -122,6 +109,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_customView:
                 intent.setClass(this, CustomViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_status_bar:
+                intent.setClass(this, StatusBarBaseActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_screen_match:
+                intent.setClass(this, ScreenMatchActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_dispatch_event:
+                intent.setClass(this, DispatchEventActivity.class);
                 startActivity(intent);
                 break;
         }

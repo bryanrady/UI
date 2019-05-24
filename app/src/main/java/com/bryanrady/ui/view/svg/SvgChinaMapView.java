@@ -42,7 +42,7 @@ public class SvgChinaMapView extends View {
     private final int LOAD_COMPLETE = 0x001;
     private List<ProvinceItem> mProvinceItemList;
     private RectF mMapRect;
-//    private float mScale = 1.0f;
+    private float mScale = 1.0f;
     private ProvinceItem mSelectItem; //点击的Item
 
     public SvgChinaMapView(Context context) {
@@ -161,10 +161,10 @@ public class SvgChinaMapView extends View {
         // 因为svg是用px做的单位，会有适配问题 所以要进行缩放
         Log.d("wangqingbin","mMapRect=="+mMapRect);
         Log.d("wangqingbin","width=="+width);
-//        if (mMapRect != null) {
-//            double mapWidth = mMapRect.width();
-//            mScale= (float) (width / mapWidth);
-//        }
+        if (mMapRect != null) {
+            double mapWidth = mMapRect.width();
+            mScale= (float) (width / mapWidth);
+        }
         setMeasuredDimension(width,height);
     }
 
@@ -172,9 +172,10 @@ public class SvgChinaMapView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if(mProvinceItemList != null){
+            Log.d("wangqingbin","mScale=="+mScale);
+            mScale = 1.0f;
             canvas.save();
-        //    Log.d("wangqingbin","mScale=="+mScale);
-        //    canvas.scale(mScale,mScale);
+            canvas.scale(mScale,mScale);
 
             for (ProvinceItem item : mProvinceItemList){
                 item.drawProvinceItem(canvas, mPaint,false);

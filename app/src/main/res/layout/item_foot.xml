@@ -6,7 +6,9 @@
               android:layout_marginRight="11px"
               android:layout_marginBottom="11px"
               android:background="#ccc"
-              android:orientation="vertical">
+              android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/tv_foot"

@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -28,6 +27,7 @@ import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.alibaba.android.vlayout.layout.StaggeredGridLayoutHelper;
 import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.svg.ProvinceItem;
 import com.chad.library.adapter.base.BaseViewHolder;
 
@@ -39,7 +39,7 @@ import java.util.List;
  * Created by Administrator on 2019/5/16.
  */
 
-public class VirtualLayoutBaseActivity extends AppCompatActivity {
+public class VirtualLayoutBaseActivity extends StatusBarBaseActivity {
 
     private List<String> mList;
 

@@ -3,12 +3,12 @@ package com.bryanrady.ui.activity.animation;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  *
@@ -37,7 +37,7 @@ import com.bryanrady.ui.R;
  *
  */
 
-public class FrameAnimationActivity extends AppCompatActivity{
+public class FrameAnimationActivity extends StatusBarBaseActivity {
 
     private Button btn_startFrame,btn_stopFrame;
     private ImageView iv;

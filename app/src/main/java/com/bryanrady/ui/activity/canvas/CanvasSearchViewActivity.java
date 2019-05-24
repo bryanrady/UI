@@ -1,14 +1,14 @@
 package com.bryanrady.ui.activity.canvas;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.canvas.CustomSearchView;
 import com.bryanrady.ui.view.canvas.CustomSearchViewController;
 
-public class CanvasSearchViewActivity extends AppCompatActivity {
+public class CanvasSearchViewActivity extends StatusBarBaseActivity {
 
     private CustomSearchView mCustomSearchView;
     private CustomSearchViewController mController;

@@ -3,17 +3,17 @@ package com.bryanrady.ui.activity.path.bezier;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class PathBezierActivity extends AppCompatActivity implements View.OnClickListener {
+public class PathBezierActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button btn_path_bezier_base;
     private Button btn_path_bezier_advanced;

@@ -5,6 +5,8 @@
     android:layout_height="120dp"
     android:paddingBottom="1px"
     android:paddingRight="1px"
-    android:scaleType="fitCenter">
+    android:scaleType="fitCenter"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
 </ImageView>

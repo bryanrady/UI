@@ -1,17 +1,17 @@
 package com.bryanrady.ui.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.CircleProgressBar2;
 
 /**
  * Created by wqb on 2018/6/25.
  */
 
-public class DrawCircleProgressBarActivity extends AppCompatActivity {
+public class DrawCircleProgressBarActivity extends StatusBarBaseActivity {
 
     private CircleProgressBar2 mProgressBar;
     private int mProgress = 0;

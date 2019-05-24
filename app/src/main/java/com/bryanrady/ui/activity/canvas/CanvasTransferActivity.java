@@ -2,7 +2,8 @@ package com.bryanrady.ui.activity.canvas;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.canvas.CanvasTransferView;
 
 /**
@@ -10,7 +11,7 @@ import com.bryanrady.ui.view.canvas.CanvasTransferView;
  * Created by wqb on 2018/7/1.
  */
 
-public class CanvasTransferActivity extends AppCompatActivity{
+public class CanvasTransferActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

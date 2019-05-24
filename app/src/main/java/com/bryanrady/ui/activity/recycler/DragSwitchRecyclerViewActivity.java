@@ -4,13 +4,13 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.DragSwitchRecyclerViewAdapter;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.decoration.LinearRecyclerItemDecoration;
 
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import java.util.List;
  * Created by Administrator on 2019/4/26.
  */
 
-public class DragSwitchRecyclerViewActivity extends AppCompatActivity {
+public class DragSwitchRecyclerViewActivity extends StatusBarBaseActivity {
 
     private RecyclerView mRecyclerView;
     private DragSwitchRecyclerViewAdapter mAdapter;

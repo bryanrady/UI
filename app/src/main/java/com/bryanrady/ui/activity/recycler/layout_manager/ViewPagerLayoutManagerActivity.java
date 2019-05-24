@@ -5,7 +5,6 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.layout_manager.douyin.OnViewPagerListener;
 import com.bryanrady.ui.view.recycler.layout_manager.douyin.ViewPagerLayoutManager;
 
@@ -23,7 +23,7 @@ import com.bryanrady.ui.view.recycler.layout_manager.douyin.ViewPagerLayoutManag
  * Created by Administrator on 2019/5/21.
  */
 
-public class ViewPagerLayoutManagerActivity extends AppCompatActivity {
+public class ViewPagerLayoutManagerActivity extends StatusBarBaseActivity {
 
     private RecyclerView mRecyclerView;
     private ViewPagerLayoutManager mLayoutManager;

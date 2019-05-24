@@ -2,15 +2,15 @@ package com.bryanrady.ui.activity.measure_layout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class AspectImageActivity extends AppCompatActivity{
+public class AspectImageActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -1,13 +1,13 @@
 package com.bryanrady.ui.activity.path.bezier;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.path.bezier.PathBezierGarbageView;
 
-public class PathBezierGarbageActivity extends AppCompatActivity {
+public class PathBezierGarbageActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

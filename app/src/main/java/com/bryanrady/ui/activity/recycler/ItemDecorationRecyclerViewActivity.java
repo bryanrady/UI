@@ -2,7 +2,6 @@ package com.bryanrady.ui.activity.recycler;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +10,7 @@ import android.widget.Toast;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.GridRecyclerViewAdapter;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.decoration.GridRecyclerItemDecoration;
 
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import java.util.List;
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class ItemDecorationRecyclerViewActivity extends AppCompatActivity{
+public class ItemDecorationRecyclerViewActivity extends StatusBarBaseActivity {
 
     private RecyclerView mRecyclerView;
     private GridRecyclerViewAdapter mAdapter;

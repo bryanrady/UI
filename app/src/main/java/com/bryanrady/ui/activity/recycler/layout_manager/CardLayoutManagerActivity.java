@@ -1,6 +1,5 @@
 package com.bryanrady.ui.activity.recycler.layout_manager;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,12 +9,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.layout_manager.card.CardItemView;
 import com.bryanrady.ui.view.recycler.layout_manager.card.CardLayoutManager;
 
 import java.util.Random;
 
-public class CardLayoutManagerActivity extends AppCompatActivity {
+public class CardLayoutManagerActivity extends StatusBarBaseActivity {
 
     private static final int[] COLORS = {0xff00FFFF, 0xffDEB887, 0xff5F9EA0,
             0xff7FFF00, 0xff6495ED, 0xffDC143C,

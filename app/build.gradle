@@ -31,6 +31,8 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:28.0.0"
     implementation "com.android.support:cardview-v7:28.0.0"
 
+    implementation 'com.android.support:design:28.0.0'
+
     //一个简单的开源 Android 工具类库，提供许多常用的类帮助我们开发程序
     implementation 'com.wx.android.common:common:1.0.1'
     //SVG   矢量图适配 灵活的尺寸设置以及着色等功能的TextView

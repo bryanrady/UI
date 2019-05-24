@@ -1,14 +1,14 @@
 package com.bryanrady.ui.activity.path.bezier;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.path.bezier.PathBezierRubbshView;
 
-public class PathBezierRubbshActivity extends AppCompatActivity {
+public class PathBezierRubbshActivity extends StatusBarBaseActivity {
 
     private Button mBtnSwitch;
     private PathBezierRubbshView pathBezierRubbshView;

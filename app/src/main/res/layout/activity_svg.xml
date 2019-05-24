@@ -3,7 +3,9 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <Button
         android:id="@+id/btn_svg_china_map"
@@ -13,6 +15,15 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="Svg中国地图" />
+
+    <Button
+        android:id="@+id/btn_svg_path_measure_china_map"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Svg中国地图——添加PathMeasure特效" />
 
     <Button
         android:id="@+id/btn_svg_search_animator"

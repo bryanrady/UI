@@ -1,16 +1,16 @@
 package com.bryanrady.ui.activity.paint;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wqb on 2018/6/26.
  */
 
-public class Xfermode_OtherActivity extends AppCompatActivity implements View.OnClickListener {
+public class Xfermode_OtherActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,12 +1,12 @@
 package com.bryanrady.ui.activity.paint;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 
-public class LinerGradientActivity extends AppCompatActivity {
+public class LinerGradientActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

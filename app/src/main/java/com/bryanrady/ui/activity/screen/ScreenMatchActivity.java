@@ -1,11 +1,11 @@
 package com.bryanrady.ui.activity.screen;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * 其实Android系统就是根据目标手机的像素密度到对应的资源目录下去查找相关资源。这就是Android屏幕适配的原理。
@@ -34,7 +34,7 @@ import com.bryanrady.ui.R;
  *
  *
  */
-public class ScreenMatchActivity extends AppCompatActivity {
+public class ScreenMatchActivity extends StatusBarBaseActivity {
 
     //声明本次使用到的java类
 

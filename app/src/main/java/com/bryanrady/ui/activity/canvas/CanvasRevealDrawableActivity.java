@@ -3,13 +3,13 @@ package com.bryanrady.ui.activity.canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.canvas.CustomHorizontalScrollView;
 import com.bryanrady.ui.view.canvas.RevealDrawable;
 
-public class CanvasRevealDrawableActivity extends AppCompatActivity {
+public class CanvasRevealDrawableActivity extends StatusBarBaseActivity {
 
     private CustomHorizontalScrollView mScrollView;
 

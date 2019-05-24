@@ -2,7 +2,6 @@ package com.bryanrady.ui.activity.recycler;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +11,7 @@ import android.widget.Toast;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.LinearRecyclerViewAdapter;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.animator.AlphaItemAnimator;
 import com.bryanrady.ui.view.recycler.animator.RotateItemAnimator;
 import com.bryanrady.ui.view.recycler.animator.ScaleItemAnimator;
@@ -25,7 +25,7 @@ import java.util.List;
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class ItemAnimatorRecyclerViewActivity extends AppCompatActivity implements View.OnClickListener{
+public class ItemAnimatorRecyclerViewActivity extends StatusBarBaseActivity implements View.OnClickListener{
 
     private Button btn_add_item,btn_delete_item,btn_update_item;
     private Button btn_alpha_animator_item,btn_rotate_animator_item,

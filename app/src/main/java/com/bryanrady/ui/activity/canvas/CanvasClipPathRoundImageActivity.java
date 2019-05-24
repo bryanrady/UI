@@ -2,12 +2,12 @@ package com.bryanrady.ui.activity.canvas;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.canvas.CanvasClipPathRoundImageView;
 
 
-public class CanvasClipPathRoundImageActivity extends AppCompatActivity{
+public class CanvasClipPathRoundImageActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -2,11 +2,11 @@ package com.bryanrady.ui.activity.animation;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * 传统2D动画之-补间动画
@@ -33,7 +33,7 @@ import com.bryanrady.ui.R;
  *              后者优点：动画效果可动态创建
  */
 
-public class TweenAnimationActivity extends AppCompatActivity implements View.OnClickListener {
+public class TweenAnimationActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button btn_translate_animation;
     private Button btn_scale_animation;

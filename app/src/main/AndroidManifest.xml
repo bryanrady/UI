@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
 
-
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.BasePaintCanvasActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.BaseDrawActivity"
@@ -162,13 +163,6 @@
         <activity android:name=".activity.event.DispatchEventActivity"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name=".activity.typeArray.TypeArrayActivity"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.typeArray.TypeArrayCustomTextActivity"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".activity.typeArray.TypeArrayDoubleImageActivity"
-            android:theme="@style/AppTheme"/>
-
 
         <activity android:name=".activity.animation.AnimationActivity"
             android:theme="@style/AppTheme"/>
@@ -193,6 +187,8 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.svg.SvgChinaMapActivity"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.svg.SvgPathMeasureChinaMapActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.svg.SvgSearchAnimatorActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.svg.SvgPluginVectorDrawableActivity"
@@ -203,6 +199,8 @@
         <activity android:name=".activity.recycler.ItemAnimatorRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.ItemDecorationRecyclerViewActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.CustomRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.StaggeredGridRecyclerViewActivity"
             android:theme="@style/AppTheme"/>
@@ -215,6 +213,14 @@
         <activity android:name=".activity.recycler.layout_manager.FlowLayoutManagerActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.layout_manager.ViewPagerLayoutManagerActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.layout_manager.SlideLayoutManagerActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.layout_manager.EchelonLayoutManagerActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.layout_manager.StackUpLayoutManagerActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.recycler.layout_manager.StackUpLayoutManagerDetailActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.recycler.layout_manager.CardLayoutManagerActivity"
             android:theme="@style/AppTheme"/>
@@ -233,9 +239,22 @@
 
         <activity android:name=".activity.custom.CustomViewActivity"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.typeArray.TypeArrayActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.typeArray.TypeArrayCustomTextActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.typeArray.TypeArrayDoubleImageActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.MaterialDesignButtonActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.custom.MaterialDesignActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.custom.QQZoomHeaderActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.custom.BehaviorCoordinatorLayoutActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".activity.status_bar.StatusBarBaseActivity"
             android:theme="@style/AppTheme"/>
 
 

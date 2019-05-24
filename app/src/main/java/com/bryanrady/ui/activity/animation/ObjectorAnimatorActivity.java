@@ -4,18 +4,18 @@ import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.graphics.PointF;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * 属性动画
  *
  */
 
-public class ObjectorAnimatorActivity extends AppCompatActivity {
+public class ObjectorAnimatorActivity extends StatusBarBaseActivity {
 
     private ImageView iv;
 

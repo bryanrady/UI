@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="#f7f7f8"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,7 +19,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#1fde94"
@@ -26,7 +28,7 @@
                 app:leftTvSize="20sp"
                 app:leftTvString="CustomTextViewLayout" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#ffffff"
@@ -53,7 +55,7 @@
                 app:rightTvSize="19sp"
                 app:rightTvString="右边" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#3F51B5"
@@ -72,7 +74,7 @@
                 app:rightTvSize="15sp"
                 app:rightTvString="银行卡限额" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#ffffff"
@@ -93,7 +95,7 @@
                 app:rightImgMarginright="10dp"
                 app:rightImgWidht="30dp" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#ff8053"
@@ -110,7 +112,7 @@
                 app:rightTvString="更多" />
 
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#EEEEEE"
@@ -127,7 +129,7 @@
                 app:leftTvSize="18sp"
                 app:leftTvString="分类" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@color/colorAccent"
@@ -137,7 +139,7 @@
                 app:leftImg="@drawable/ic_search"
                 app:leftImgMarginleft="12dp" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#ffffff"
@@ -154,7 +156,7 @@
                 app:leftTvSize="18sp"
                 app:leftTvString="工商银行" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#ffffff"
@@ -171,7 +173,7 @@
                 app:leftTvString="市场价" />
 
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginRight="5dp"
@@ -191,7 +193,7 @@
                 app:rightImgHeight="40dp"
                 app:rightImgWidht="40dp" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="#ffffff"
@@ -211,7 +213,7 @@
                 app:rightTvSize="18sp"
                 app:rightTvString="黑色  128" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="#ffffff"
@@ -238,7 +240,7 @@
                 app:rightImgMarginright="5dp"
                 app:rightImgWidht="40dp" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="#ffffff"
@@ -261,7 +263,7 @@
                 app:leftTopTvSize="18sp"
                 app:leftTopTvString="工商银行" />
 
-            <com.bryanrady.ui.view.typeArray.CustomTextView
+            <com.bryanrady.ui.view.custom.typeArray.CustomTextView
                 android:id="@+id/coustomTextView"
                 android:layout_width="match_parent"
                 android:layout_height="55dp" />

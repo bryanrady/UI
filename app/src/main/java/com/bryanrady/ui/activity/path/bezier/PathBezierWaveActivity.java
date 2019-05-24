@@ -1,14 +1,14 @@
 package com.bryanrady.ui.activity.path.bezier;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.path.bezier.PathBezierWaveView;
 
-public class PathBezierWaveActivity extends AppCompatActivity {
+public class PathBezierWaveActivity extends StatusBarBaseActivity {
     private Button mBtnReset;
     private Button mBtnStart;
     private PathBezierWaveView pathBezierWaveView;

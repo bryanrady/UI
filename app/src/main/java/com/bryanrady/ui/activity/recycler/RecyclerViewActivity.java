@@ -3,18 +3,19 @@ package com.bryanrady.ui.activity.recycler;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class RecyclerViewActivity extends AppCompatActivity implements View.OnClickListener {
+public class RecyclerViewActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
+    private Button btn_recycler_recyclerView;
     private Button btn_recycler_staggered_grid;
     private Button btn_recycler_linear_layout;
     private Button btn_recycler_grid_layout;
@@ -33,6 +34,9 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void initView() {
+
+        btn_recycler_recyclerView = (Button) findViewById(R.id.btn_recycler_recyclerView);
+        btn_recycler_recyclerView.setOnClickListener(this);
 
         btn_recycler_staggered_grid = (Button) findViewById(R.id.btn_recycler_staggered_grid);
         btn_recycler_staggered_grid.setOnClickListener(this);
@@ -68,6 +72,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         Intent intent = new Intent();
         switch (v.getId()){
+            case R.id.btn_recycler_recyclerView:
+                intent.setClass(this, CustomRecyclerViewActivity.class);
+                startActivity(intent);
+                break;
             case R.id.btn_recycler_staggered_grid:
                 intent.setClass(this, StaggeredGridRecyclerViewActivity.class);
                 startActivity(intent);

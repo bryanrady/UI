@@ -3,22 +3,25 @@ package com.bryanrady.ui.activity.recycler;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.layout_manager.CardLayoutManagerActivity;
+import com.bryanrady.ui.activity.recycler.layout_manager.EchelonLayoutManagerActivity;
 import com.bryanrady.ui.activity.recycler.layout_manager.FlowLayoutManagerActivity;
+import com.bryanrady.ui.activity.recycler.layout_manager.SlideLayoutManagerActivity;
+import com.bryanrady.ui.activity.recycler.layout_manager.StackUpLayoutManagerActivity;
 import com.bryanrady.ui.activity.recycler.layout_manager.ViewPagerLayoutManagerActivity;
 import com.bryanrady.ui.activity.recycler.vlayout.VirtualLayoutBaseActivity;
 import com.bryanrady.ui.activity.recycler.vlayout.taobao.VirtualLayoutTaoBaoActivity;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class LayoutManagerRecyclerViewActivity extends AppCompatActivity implements View.OnClickListener {
+public class LayoutManagerRecyclerViewActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button btn_recycler_virtual_layout_base;
     private Button btn_recycler_virtual_layout_taobao;
@@ -26,7 +29,7 @@ public class LayoutManagerRecyclerViewActivity extends AppCompatActivity impleme
     private Button btn_recycler_douyin_layout_manager;
     private Button btn_recycler_tantan_layout_manager;
     private Button btn_recycler_echelon_layout_manager;
-    private Button btn_recycler_discover_layout_manager;
+    private Button btn_recycler_stack_up_layout_manager;
     private Button btn_recycler_card_layout_manager;
 
     @Override
@@ -56,8 +59,8 @@ public class LayoutManagerRecyclerViewActivity extends AppCompatActivity impleme
         btn_recycler_echelon_layout_manager = (Button) findViewById(R.id.btn_recycler_echelon_layout_manager);
         btn_recycler_echelon_layout_manager.setOnClickListener(this);
 
-        btn_recycler_discover_layout_manager = (Button) findViewById(R.id.btn_recycler_discover_layout_manager);
-        btn_recycler_discover_layout_manager.setOnClickListener(this);
+        btn_recycler_stack_up_layout_manager = (Button) findViewById(R.id.btn_recycler_stack_up_layout_manager);
+        btn_recycler_stack_up_layout_manager.setOnClickListener(this);
 
         btn_recycler_card_layout_manager = (Button) findViewById(R.id.btn_recycler_card_layout_manager);
         btn_recycler_card_layout_manager.setOnClickListener(this);
@@ -85,15 +88,15 @@ public class LayoutManagerRecyclerViewActivity extends AppCompatActivity impleme
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_tantan_layout_manager:
-                intent.setClass(this, VirtualLayoutTaoBaoActivity.class);
+                intent.setClass(this, SlideLayoutManagerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_echelon_layout_manager:
-                intent.setClass(this, VirtualLayoutTaoBaoActivity.class);
+                intent.setClass(this, EchelonLayoutManagerActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_recycler_discover_layout_manager:
-                intent.setClass(this, VirtualLayoutTaoBaoActivity.class);
+            case R.id.btn_recycler_stack_up_layout_manager:
+                intent.setClass(this, StackUpLayoutManagerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_recycler_card_layout_manager:

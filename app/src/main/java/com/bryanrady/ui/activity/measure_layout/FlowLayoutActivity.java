@@ -2,15 +2,15 @@ package com.bryanrady.ui.activity.measure_layout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wqb on 2018/7/1.
  */
 
-public class FlowLayoutActivity extends AppCompatActivity{
+public class FlowLayoutActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -2,7 +2,6 @@ package com.bryanrady.ui.activity.animation;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -10,12 +9,13 @@ import android.view.animation.RotateAnimation;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wqb on 2018/7/17.
  */
 
-public class TweenRotateActivity extends AppCompatActivity implements View.OnClickListener {
+public class TweenRotateActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button button;
 

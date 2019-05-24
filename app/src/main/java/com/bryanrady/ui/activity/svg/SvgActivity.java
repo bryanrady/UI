@@ -3,7 +3,6 @@ package com.bryanrady.ui.activity.svg;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,6 +10,7 @@ import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.path.PathBaseActivity;
 import com.bryanrady.ui.activity.path.bezier.PathBezierActivity;
 import com.bryanrady.ui.activity.path.path_measure.PathMeasureActivity;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * https://www.jianshu.com/p/9f3221179e3c
@@ -21,9 +21,10 @@ import com.bryanrady.ui.activity.path.path_measure.PathMeasureActivity;
  * 简影讯，简约精彩影讯。基于Retrofit+RxJava+Android Arch+DataBinding+Room的高颜值影讯app。
  * 简约，优雅，精彩，即看即走，已正式发布上线。
  */
-public class SvgActivity extends AppCompatActivity implements View.OnClickListener {
+public class SvgActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button btn_svg_china_map;
+    private Button btn_svg_path_measure_china_map;
     private Button btn_svg_search_animator;
     private Button btn_svg_plugin;
 
@@ -39,6 +40,9 @@ public class SvgActivity extends AppCompatActivity implements View.OnClickListen
         btn_svg_china_map = (Button) findViewById(R.id.btn_svg_china_map);
         btn_svg_china_map.setOnClickListener(this);
 
+        btn_svg_path_measure_china_map = findViewById(R.id.btn_svg_path_measure_china_map);
+        btn_svg_path_measure_china_map.setOnClickListener(this);
+
         btn_svg_search_animator = (Button) findViewById(R.id.btn_svg_search_animator);
         btn_svg_search_animator.setOnClickListener(this);
 
@@ -53,6 +57,10 @@ public class SvgActivity extends AppCompatActivity implements View.OnClickListen
         switch (v.getId()){
             case R.id.btn_svg_china_map:
                 intent.setClass(this, SvgChinaMapActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_svg_path_measure_china_map:
+                intent.setClass(this, SvgPathMeasureChinaMapActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_svg_search_animator:

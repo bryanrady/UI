@@ -3,20 +3,18 @@ package com.bryanrady.ui.activity.canvas;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.bryanrady.ui.R;
-import com.bryanrady.ui.activity.paint.PaintShadersActivity;
-import com.bryanrady.ui.activity.paint.PaintXfermodeActivity;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Canvas 裁剪    canvas.clipxxx系列
  * Created by wqb on 2018/7/1.
  */
 
-public class CanvasClipActivity extends AppCompatActivity implements View.OnClickListener {
+public class CanvasClipActivity extends StatusBarBaseActivity implements View.OnClickListener {
 
     private Button btn_canvas_clip_path;
     private Button btn_canvas_clip_rect;

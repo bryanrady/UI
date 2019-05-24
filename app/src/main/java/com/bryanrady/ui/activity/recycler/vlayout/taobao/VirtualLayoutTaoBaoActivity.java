@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +16,7 @@ import com.alibaba.android.vlayout.layout.GridLayoutHelper;
 import com.alibaba.android.vlayout.layout.LinearLayoutHelper;
 import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.sunfusheng.marqueeview.MarqueeView;
@@ -46,7 +46,7 @@ import java.util.List;
  * Created by Administrator on 2019/5/16.
  */
 
-public class VirtualLayoutTaoBaoActivity extends AppCompatActivity {
+public class VirtualLayoutTaoBaoActivity extends StatusBarBaseActivity {
 
     //不同类型item必须不同的viewtype
     private static final int BANNER_VIEW_TYPE = 1;

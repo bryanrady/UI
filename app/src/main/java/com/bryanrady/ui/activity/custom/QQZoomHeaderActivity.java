@@ -1,15 +1,15 @@
 package com.bryanrady.ui.activity.custom;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.custom.QQHeaderSrollListView;
 
-public class QQZoomHeaderActivity extends AppCompatActivity {
+public class QQZoomHeaderActivity extends StatusBarBaseActivity {
 
     private QQHeaderSrollListView mQQHeaderSrollView;
 

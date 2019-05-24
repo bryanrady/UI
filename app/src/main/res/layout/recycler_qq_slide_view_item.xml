@@ -5,7 +5,9 @@
     android:layout_height="@dimen/dp_60"
     android:background="@android:color/white"
     android:scrollbars="none"
-    android:layout_marginBottom="@dimen/dp_1">
+    android:layout_marginBottom="@dimen/dp_1"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <RelativeLayout
         android:layout_width="match_parent"

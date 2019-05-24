@@ -3,7 +3,9 @@
     android:id="@+id/customViewGroup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <com.bryanrady.ui.activity.event.CustomButton
         android:id="@+id/customButton"

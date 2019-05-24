@@ -2,18 +2,18 @@ package com.bryanrady.ui.activity.recycler;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.PullRefreshRecyclerViewAdapter;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.pull_refresh.MessageRelativeLayout;
 import com.bryanrady.ui.view.recycler.pull_refresh.PullRefreshRecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PullRefreshRecyclerViewActivity extends AppCompatActivity {
+public class PullRefreshRecyclerViewActivity extends StatusBarBaseActivity {
 
     private PullRefreshRecyclerView mArticleContent;
     private MessageRelativeLayout mArticleMessageContent;

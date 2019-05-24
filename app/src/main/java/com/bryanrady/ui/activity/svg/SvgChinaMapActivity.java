@@ -1,15 +1,15 @@
 package com.bryanrady.ui.activity.svg;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 /**
  * Created by wqb on 2018/6/24.
  */
 
-public class SvgChinaMapActivity extends AppCompatActivity {
+public class SvgChinaMapActivity extends StatusBarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

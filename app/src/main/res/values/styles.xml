@@ -1,32 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- ActionBar主题颜色 -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Toolbar ActionBar主题颜色 -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <!--状态栏的颜色  5.0以后-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <!--系统中，子空间，复选框，单选按钮，选中时的颜色 如checkbox等  5.0以后-->
         <item name="colorAccent">@color/colorAccent</item>
-
-
-        <!--窗体的背景色-->
-        <!--<item name="android:windowBackground">@android:color/white</item>-->
-
-        <!--&lt;!&ndash;窗体无标题栏&ndash;&gt;-->
-        <!--<item name="windowNoTitle">true</item>-->
-        <!--&lt;!&ndash;无actionbar&ndash;&gt;-->
-        <!--<item name="windowActionBar">false</item>-->
-        <!--&lt;!&ndash;取消状态栏,也就是全屏显示&ndash;&gt;-->
-        <!--<item name="android:windowFullscreen">true</item>-->
-
     </style>
 
-    <style name="AppTheme.NoActionBar" parent="AppTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowTranslucentStatus">true</item>
+    <style name="AppTheme" parent="@style/BaseAppTheme" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+
+        <item name="colorControlHighlight">@color/deep_green</item>
+        <item name="colorButtonNormal">@color/green</item>
+
     </style>
 
     <style name="text_flag_01">

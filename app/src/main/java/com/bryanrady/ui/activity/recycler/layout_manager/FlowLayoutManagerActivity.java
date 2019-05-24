@@ -1,7 +1,6 @@
 package com.bryanrady.ui.activity.recycler.layout_manager;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bryanrady.ui.R;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.layout_manager.card.CardItemView;
 import com.bryanrady.ui.view.recycler.layout_manager.card.CardLayoutManager;
 import com.bryanrady.ui.view.recycler.layout_manager.flow_layout.FlowLayoutManager;
@@ -18,7 +18,7 @@ import com.bryanrady.ui.view.recycler.layout_manager.flow_layout.FlowLayoutManag
 
 import java.util.Random;
 
-public class FlowLayoutManagerActivity extends AppCompatActivity {
+public class FlowLayoutManagerActivity extends StatusBarBaseActivity {
 
     private RecyclerView mRecyclerView;
 

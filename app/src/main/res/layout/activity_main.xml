@@ -2,11 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,45 +50,21 @@
                 android:textAllCaps="false"
                 android:text="UI绘制——Path路径" />
             <Button
-                android:id="@+id/btn_animation"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="动画" />
-            <Button
-                android:id="@+id/btn_screen_match"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="最小宽度限定符进行屏幕适配" />
-            <Button
-                android:id="@+id/btn_dispatch_event"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="事件分发机制" />
-            <Button
-                android:id="@+id/btn_type_array"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="自定义属性" />
-            <Button
                 android:id="@+id/btn_svg"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="SVG矢量图形" />
+                android:text="UI绘制——SVG矢量图形" />
+            <Button
+                android:id="@+id/btn_animation"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="UI绘制——动画" />
             <Button
                 android:id="@+id/btn_recyclerView"
                 android:layout_margin="5dp"
@@ -103,7 +82,31 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="自定义控件" />
-
+            <Button
+                android:id="@+id/btn_status_bar"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="沉浸式状态栏" />
+            <Button
+                android:id="@+id/btn_screen_match"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="最小宽度限定符进行屏幕适配" />
+            <Button
+                android:id="@+id/btn_dispatch_event"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="事件分发机制" />
         </LinearLayout>
 
     </ScrollView>

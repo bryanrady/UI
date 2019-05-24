@@ -2,7 +2,6 @@ package com.bryanrady.ui.activity.recycler;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -11,6 +10,7 @@ import android.widget.Toast;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.StaggeredGridRecyclerAdapter;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ import java.util.List;
  * Created by wangqingbin on 2019/4/4.
  */
 
-public class StaggeredGridRecyclerViewActivity extends AppCompatActivity{
+public class StaggeredGridRecyclerViewActivity extends StatusBarBaseActivity {
 
     private RecyclerView mRecyclerView;
     private StaggeredGridRecyclerAdapter mAdapter;

@@ -9,9 +9,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
-    <com.bryanrady.ui.view.typeArray.DoubleImageView
+    <com.bryanrady.ui.view.custom.typeArray.DoubleImageView
         android:id="@+id/doubleImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

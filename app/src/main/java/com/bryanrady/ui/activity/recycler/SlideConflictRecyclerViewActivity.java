@@ -1,19 +1,19 @@
 package com.bryanrady.ui.activity.recycler;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.widget.CheckBox;
 
 import com.bryanrady.ui.R;
 import com.bryanrady.ui.activity.recycler.adapter.SlideConflictSectionRecyclerViewAdapter;
+import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
 import com.bryanrady.ui.view.recycler.slide_conflict.SlideConflictRecyclerView;
 
 /**
  * Created by Administrator on 2019/5/14.
  */
 
-public class SlideConflictRecyclerViewActivity extends AppCompatActivity {
+public class SlideConflictRecyclerViewActivity extends StatusBarBaseActivity {
 
     private SlideConflictRecyclerView mRvNormal;
     private SlideConflictRecyclerView mRvBetter;

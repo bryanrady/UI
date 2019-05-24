@@ -4,7 +4,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
     <TextView
         android:id="@+id/tv_staggered_recycler_item_title"
         android:layout_width="match_parent"
