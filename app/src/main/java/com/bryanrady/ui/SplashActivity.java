@@ -59,7 +59,7 @@ public class SplashActivity extends AppCompatActivity{
             getWindow().setNavigationBarColor(Color.TRANSPARENT);
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
-        
+
         handler.sendEmptyMessageDelayed(1,5000);
     }
 
