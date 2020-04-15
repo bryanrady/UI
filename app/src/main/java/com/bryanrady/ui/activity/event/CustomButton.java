@@ -30,6 +30,7 @@ public class CustomButton extends Button {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public CustomButton(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
+        //请求父控件是否要拦截事件 true拦截、false不拦截
         //getParent().requestDisallowInterceptTouchEvent(true);
     }
 

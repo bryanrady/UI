@@ -28,7 +28,8 @@ public class CustomViewGroup extends LinearLayout {
     @SuppressLint("NewApi")
     public CustomViewGroup(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-
+        //父控件是否要拦截事件 true拦截、false不拦截
+        requestDisallowInterceptTouchEvent(true);
     }
 
     public void setInterceptTouchEvent(boolean intercept){
