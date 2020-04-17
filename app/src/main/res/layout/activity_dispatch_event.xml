@@ -9,21 +9,14 @@
 
     <com.bryanrady.ui.activity.event.CustomButton
         android:id="@+id/customButton"
-        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_100"
         android:layout_width="@dimen/dp_200"
         android:layout_height="@dimen/dp_60"
         android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:textColor="#ffffff"
         android:textAllCaps="false"
         android:text="测试事件分发机制"
         android:clickable="true" />
-
-
-    <Button
-        android:id="@+id/btn_dispatch_event"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp_20"
-        android:text="设置ViewGroup拦截事件"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </com.bryanrady.ui.activity.event.CustomViewGroup>

@@ -1,141 +1,83 @@
 package com.bryanrady.ui.activity.event;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 public class CustomViewGroup extends LinearLayout {
 
-    private boolean mIntercept = false;
-
     public CustomViewGroup(Context context) {
-        super(context);
+        this(context,null);
     }
 
     public CustomViewGroup(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context,attrs, 0);
     }
 
     public CustomViewGroup(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-    }
-
-    @SuppressLint("NewApi")
-    public CustomViewGroup(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        //父控件是否要拦截事件 true拦截、false不拦截
-        requestDisallowInterceptTouchEvent(true);
-    }
-
-    public void setInterceptTouchEvent(boolean intercept){
-        mIntercept = intercept;
+        //是否禁用父控件拦截事件功能    true禁用父控件拦截事件功能、false不禁用父控件拦截事件功能
+        //主要的效果就是让控件的父控件不要调用onInterceptTouchEvent()方法,不要拦截事件,
+        // 这样子控件就能拿到所有的事件,然后根据自己的逻辑进行处理
+        //requestDisallowInterceptTouchEvent(true);
+        /**
+         *
+         * requestDisallowInterceptTouchEvent注意：
+         *
+         * 1.在ViewGroup的事件分发中，每次只要DOWN事件发生的时候,都会通过resetTouchState()会做一次清除设置的处理,
+         *  即mGroupFlags被设置为不等于FLAG_DISALLOW_INTERCEPT，可以理解成把disallowIntercept重置为false。
+         *  所以在DOWN事件之前调用requestDisallowInterceptTouchEvent()是没有意义的,一般我们都是在子View里面收到DOWN
+         *  事件后请求父控件不要拦截接下来的事件。
+         *
+         * 2.就算是调用了requestDisallowInterceptTouchEvent()，父控件的DOWN事件也是一定会走onInterceptTouchEvent()的,
+         *  所以想要父控件不要拦截，那么父控件的onInterceptTouchEvent()在DOWN事件的时候一定要返回false,表示不要
+         *  拦截DOWN事件
+         *
+         */
     }
 
     @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
-        Log.d("wangqingbin","mIntercept =="+mIntercept);
-        return mIntercept;
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
     }
 
-    //    /**
-//     * 源码分析：ViewGroup.dispatchTouchEvent（）
-//     */
-//    public boolean dispatchTouchEvent(MotionEvent ev) {
-//
-//    ... // 仅贴出关键代码
-//
-//        // 重点分析1：ViewGroup每次事件分发时，都需调用onInterceptTouchEvent()询问是否拦截事件
-//        if (disallowIntercept || !onInterceptTouchEvent(ev)) {
-//
-//            // 判断值1：disallowIntercept = 是否禁用事件拦截的功能(默认是false)，可通过调用requestDisallowInterceptTouchEvent（）修改
-//            // 判断值2： !onInterceptTouchEvent(ev) = 对onInterceptTouchEvent()返回值取反
-//            // a. 若在onInterceptTouchEvent()中返回false（即不拦截事件），就会让第二个值为true，从而进入到条件判断的内部
-//            // b. 若在onInterceptTouchEvent()中返回true（即拦截事件），就会让第二个值为false，从而跳出了这个条件判断
-//            // c. 关于onInterceptTouchEvent() ->>分析1
-//
-//            ev.setAction(MotionEvent.ACTION_DOWN);
-//            final int scrolledXInt = (int) scrolledXFloat;
-//            final int scrolledYInt = (int) scrolledYFloat;
-//            final View[] children = mChildren;
-//            final int count = mChildrenCount;
-//
-//            // 重点分析2
-//            // 通过for循环，遍历了当前ViewGroup下的所有子View
-//            for (int i = count - 1; i >= 0; i--) {
-//                final View child = children[i];
-//                if ((child.mViewFlags & VISIBILITY_MASK) == VISIBLE
-//                        || child.getAnimation() != null) {
-//                    child.getHitRect(frame);
-//
-//                    // 判断当前遍历的View是不是正在点击的View，从而找到当前被点击的View
-//                    // 若是，则进入条件判断内部
-//                    if (frame.contains(scrolledXInt, scrolledYInt)) {
-//                        final float xc = scrolledXFloat - child.mLeft;
-//                        final float yc = scrolledYFloat - child.mTop;
-//                        ev.setLocation(xc, yc);
-//                        child.mPrivateFlags &= ~CANCEL_NEXT_UP_EVENT;
-//
-//                        // 条件判断的内部调用了该View的dispatchTouchEvent()
-//                        // 即 实现了点击事件从ViewGroup到子View的传递（具体请看下面的View事件分发机制）
-//                        if (child.dispatchTouchEvent(ev))  {
-//
-//                            mMotionTarget = child;
-//                            return true;
-//                            // 调用子View的dispatchTouchEvent后是有返回值的
-//                            // 若该控件可点击，那么点击时，dispatchTouchEvent的返回值必定是true，因此会导致条件判断成立
-//                            // 于是给ViewGroup的dispatchTouchEvent（）直接返回了true，即直接跳出
-//                            // 即把ViewGroup的点击事件拦截掉
-//
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-//    boolean isUpOrCancel = (action == MotionEvent.ACTION_UP) ||
-//            (action == MotionEvent.ACTION_CANCEL);
-//            if (isUpOrCancel) {
-//        mGroupFlags &= ~FLAG_DISALLOW_INTERCEPT;
-//    }
-//    final View target = mMotionTarget;
-//
-//    // 重点分析3
-//    // 若点击的是空白处（即无任何View接收事件） / 拦截事件（手动复写onInterceptTouchEvent（），从而让其返回true）
-//        if (target == null) {
-//        ev.setLocation(xf, yf);
-//        if ((mPrivateFlags & CANCEL_NEXT_UP_EVENT) != 0) {
-//            ev.setAction(MotionEvent.ACTION_CANCEL);
-//            mPrivateFlags &= ~CANCEL_NEXT_UP_EVENT;
-//        }
-//
-//        return super.dispatchTouchEvent(ev);
-//        // 调用ViewGroup父类的dispatchTouchEvent()，即View.dispatchTouchEvent()
-//        // 因此会执行ViewGroup的onTouch() ->> onTouchEvent() ->> performClick（） ->> onClick()，即自己处理该事件，事件不会往下传递（具体请参考View事件的分发机制中的View.dispatchTouchEvent（））
-//        // 此处需与上面区别：子View的dispatchTouchEvent（）
-//    }
-//
-//        ...
-//
-//}
-//    /**
-//     * 分析1：ViewGroup.onInterceptTouchEvent()
-//     * 作用：是否拦截事件
-//     * 说明：
-//     *     a. 返回true = 拦截，即事件停止往下传递（需手动设置，即复写onInterceptTouchEvent（），从而让其返回true）
-//     *     b. 返回false = 不拦截（默认）
-//     */
-//    public boolean onInterceptTouchEvent(MotionEvent ev) {
-//
-//        return false;
-//
-//    }
-//    // 回到调用原处
+    /**
+     * 平时开发过程中可能会有这种需求：在触碰的时候，按下那下（ACTION_DOWN）需要子View进行事件消费，但在滑
+     *  动（ACTION_MOVE）或者抬起（ACTION_UP）的时候需要父布局进行拦截操作。
+     *  requestDisallowInterceptTouchEvent()
+     * @param ev
+     * @return
+     */
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        /**
+         * 这里只拦截 滑动和抬起事件
+         */
+        switch (ev.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                return false;
+            case MotionEvent.ACTION_MOVE:
+            case MotionEvent.ACTION_UP:
+                return true;
+        }
+        return super.onInterceptTouchEvent(ev);
+    }
 
-
-
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                Log.d("wangqingbin", "You down layout");
+                return true;
+            case MotionEvent.ACTION_UP:
+                Log.d("wangqingbin", "You up layout");
+                return true;
+            case MotionEvent.ACTION_MOVE:
+                Log.d("wangqingbin", "You move layout");
+                return true;
+        }
+        return super.onTouchEvent(event);
+    }
 }
