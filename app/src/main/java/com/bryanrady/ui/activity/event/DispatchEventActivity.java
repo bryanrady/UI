@@ -81,30 +81,33 @@ public class DispatchEventActivity extends StatusBarBaseActivity {
         CustomViewGroup customViewGroup = findViewById(R.id.customViewGroup);
         CustomButton customButton = findViewById(R.id.customButton);
 
+        customViewGroup.setClickable(true);
+        customButton.setClickable(true);
+
+//        customViewGroup.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                Log.d("wangqingbin","CustomViewGroup onTouch.....");
+//                return false;
+//            }
+//        });
         customViewGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("wangqingbin","CustomViewGroup onClick.....");
             }
         });
-        customViewGroup.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                Log.d("wangqingbin","CustomViewGroup onTouch.....");
-                return false;
-            }
-        });
+//        customButton.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                Log.d("wangqingbin","CustomButton onTouch.....");
+//                return false;
+//            }
+//        });
         customButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("wangqingbin","CustomButton onClick.....");
-            }
-        });
-        customButton.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                Log.d("wangqingbin","CustomButton onTouch.....");
-                return false;
             }
         });
 

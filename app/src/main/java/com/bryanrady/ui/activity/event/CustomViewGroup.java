@@ -55,29 +55,29 @@ public class CustomViewGroup extends LinearLayout {
         /**
          * 这里只拦截 滑动和抬起事件
          */
-        switch (ev.getAction()){
-            case MotionEvent.ACTION_DOWN:
-                return false;
-            case MotionEvent.ACTION_MOVE:
-            case MotionEvent.ACTION_UP:
-                return true;
-        }
+//        switch (ev.getAction()){
+//            case MotionEvent.ACTION_DOWN:
+//                return false;
+//            case MotionEvent.ACTION_MOVE:
+//            case MotionEvent.ACTION_UP:
+//                return true;
+//        }
         return super.onInterceptTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()){
-            case MotionEvent.ACTION_DOWN:
-                Log.d("wangqingbin", "You down layout");
-                return true;
-            case MotionEvent.ACTION_UP:
-                Log.d("wangqingbin", "You up layout");
-                return true;
-            case MotionEvent.ACTION_MOVE:
-                Log.d("wangqingbin", "You move layout");
-                return true;
-        }
+//        switch (event.getAction()){
+//            case MotionEvent.ACTION_DOWN:
+//                Log.d("wangqingbin", "You down layout");
+//                return true;
+//            case MotionEvent.ACTION_UP:
+//                Log.d("wangqingbin", "You up layout");
+//                return true;
+//            case MotionEvent.ACTION_MOVE:
+//                Log.d("wangqingbin", "You move layout");
+//                return true;
+//        }
         return super.onTouchEvent(event);
     }
 }

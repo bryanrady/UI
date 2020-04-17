@@ -35,33 +35,33 @@ public class CustomButton extends Button {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()){
-            case MotionEvent.ACTION_DOWN:
-                //禁用事件拦截功能
-            //    getParent().requestDisallowInterceptTouchEvent(true);
-                /**
-                 *  当子View接收到了按下事件后，就禁用父容器事件拦截功能，使父容器不能拦截后续事件，
-                 *  就是把disallowIntercept设置为true，这时候走的就是else语句的代码，得出的结果就是
-                 *  不拦截事件，所以说Down事件后面的MOVE和UP事件还是会分发到子View上。
-                 *
-                 *                if (!disallowIntercept) {
-                 *                     intercepted = onInterceptTouchEvent(ev);
-                 *                 } else {
-                 *                     intercepted = false;
-                 *                 }
-                 *
-                 *
-                 */
-                Log.d("wangqingbin", "You down button");
-                return true;
-            case MotionEvent.ACTION_UP:
-            //    getParent().requestDisallowInterceptTouchEvent(false);
-                Log.d("wangqingbin", "You up button");
-                return true;
-            case MotionEvent.ACTION_MOVE:
-                Log.d("wangqingbin", "You move button");
-                return true;
-        }
+//        switch (event.getAction()){
+//            case MotionEvent.ACTION_DOWN:
+//                //禁用事件拦截功能
+//            //    getParent().requestDisallowInterceptTouchEvent(true);
+//                /**
+//                 *  当子View接收到了按下事件后，就禁用父容器事件拦截功能，使父容器不能拦截后续事件，
+//                 *  就是把disallowIntercept设置为true，这时候走的就是else语句的代码，得出的结果就是
+//                 *  不拦截事件，所以说Down事件后面的MOVE和UP事件还是会分发到子View上。
+//                 *
+//                 *                if (!disallowIntercept) {
+//                 *                     intercepted = onInterceptTouchEvent(ev);
+//                 *                 } else {
+//                 *                     intercepted = false;
+//                 *                 }
+//                 *
+//                 *
+//                 */
+//                Log.d("wangqingbin", "You down button");
+//                return true;
+//            case MotionEvent.ACTION_UP:
+//            //    getParent().requestDisallowInterceptTouchEvent(false);
+//                Log.d("wangqingbin", "You up button");
+//                return true;
+//            case MotionEvent.ACTION_MOVE:
+//                Log.d("wangqingbin", "You move button");
+//                return true;
+//        }
         return super.onTouchEvent(event);
     }
 }
