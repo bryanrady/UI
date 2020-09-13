@@ -24,7 +24,6 @@ public class LinearProgressActivity extends AppCompatActivity implements SeekBar
         setContentView(R.layout.activity_progress_linear);
 
         mProgressBar2 = findViewById(R.id.progressBar2);
-
         mProgressBar5 = findViewById(R.id.progressBar5);
         mProgressBar6 = findViewById(R.id.progressBar6);
         mProgressBar7 = findViewById(R.id.progressBar7);

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:text="start"/>
+
+    <com.bryanrady.ui.view.progress.LinearProgressBar
+        android:id="@+id/linearProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        app:progress_color_background="#DDDDDD"
+        app:radius="20dp"
+        app:progress_radius="20dp"
+        app:text_size="15sp"
+        app:text_show="true"
+        app:progress_value="100"/>
+
+</RelativeLayout>

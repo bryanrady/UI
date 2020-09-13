@@ -127,7 +127,8 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.progress.WaterWaveProgressActivity"
             android:theme="@style/AppTheme"/>
-
+        <activity android:name=".activity.progress.ProgressUpdateActivity"
+            android:theme="@style/AppTheme"/>
 
         <activity android:name=".activity.path.PathActivity"
             android:theme="@style/AppTheme"/>

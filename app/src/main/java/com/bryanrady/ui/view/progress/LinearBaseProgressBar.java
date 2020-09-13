@@ -51,10 +51,10 @@ public abstract class LinearBaseProgressBar extends BaseProgressBar {
         progressRadius = typedArray.getDimension(R.styleable.LinearBaseProgressBar_progress_radius, 0);
         typedArray.recycle();
 
-        if(radius==-1){ //没有赋值，则自己处理
+        if(radius == -1){ //没有赋值，则自己处理
             isRadius = true;
         }
-        if(leftTopRadius==0 || leftBottomRadius==0 || rightTopRadius==0 || rightBottomRadius==0){
+        if(leftTopRadius == 0 || leftBottomRadius == 0 || rightTopRadius == 0 || rightBottomRadius == 0){
             isRadius = true;
         }
     }

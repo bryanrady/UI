@@ -13,6 +13,7 @@ import com.bryanrady.ui.activity.canvas.CanvasActivity;
 import com.bryanrady.ui.activity.animation.AnimationActivity;
 import com.bryanrady.ui.activity.path.PathActivity;
 import com.bryanrady.ui.activity.progress.ProgressMainActivity;
+import com.bryanrady.ui.activity.progress.ProgressUpdateActivity;
 import com.bryanrady.ui.activity.recycler.RecyclerViewActivity;
 import com.bryanrady.ui.activity.screen.ScreenMatchActivity;
 import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
@@ -97,7 +98,7 @@ public class MainActivity extends StatusBarBaseActivity implements View.OnClickL
                 startActivity(intent);
                 break;
             case R.id.btn_custom_progress:
-                intent.setClass(this, ProgressMainActivity.class);
+                intent.setClass(this, ProgressUpdateActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_path:
