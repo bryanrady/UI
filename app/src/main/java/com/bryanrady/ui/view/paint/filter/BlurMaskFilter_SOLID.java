@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.paint;
+package com.bryanrady.ui.view.paint.filter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,12 +18,12 @@ import com.bryanrady.ui.R;
  * Created by wqb on 2018/6/26.
  */
 
-public class BlurMaskFilter_INNER extends View {
+public class BlurMaskFilter_SOLID extends View {
 
     private Paint mPaint;
     private Bitmap mBitmap;
 
-    public BlurMaskFilter_INNER(Context context, @Nullable AttributeSet attrs) {
+    public BlurMaskFilter_SOLID(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setLayerType(LAYER_TYPE_SOFTWARE,null);
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -38,7 +38,7 @@ public class BlurMaskFilter_INNER extends View {
         canvas.drawBitmap(mBitmap, null , rectF , mPaint);
 
         RectF rectF1 = new RectF(100+mBitmap.getWidth(),100,mBitmap.getWidth()*2,mBitmap.getHeight());
-        mPaint.setMaskFilter(new BlurMaskFilter(50, BlurMaskFilter.Blur.INNER));
+        mPaint.setMaskFilter(new BlurMaskFilter(50, BlurMaskFilter.Blur.SOLID));
         canvas.drawBitmap(mBitmap, null , rectF1 , mPaint);
     }
 

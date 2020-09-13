@@ -5,7 +5,7 @@
     android:clipToPadding="true"
     android:fitsSystemWindows="true">
 
-    <com.bryanrady.ui.view.paint.SweepGradientView
+    <com.bryanrady.ui.view.paint.shader.SweepGradientView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

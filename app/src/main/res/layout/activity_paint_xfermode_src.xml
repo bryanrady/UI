@@ -63,36 +63,36 @@
         </TableRow>
     </TableLayout>
 
-    <com.bryanrady.ui.view.paint.RoundImageView_SRC_IN
+    <com.bryanrady.ui.view.paint.xfermode.RoundImageView_SRC_IN
         android:id="@+id/roundsrcin_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.bryanrady.ui.view.paint.InvertImageView_SRC_IN
+    <com.bryanrady.ui.view.paint.xfermode.InvertImageView_SRC_IN
         android:id="@+id/invertsrcin_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.EraserView_SRC_OUT
+    <com.bryanrady.ui.view.paint.xfermode.EraserView_SRC_OUT
         android:id="@+id/eraserview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.GuaguaCardView_SRC_OUT
+    <com.bryanrady.ui.view.paint.xfermode.GuaguaCardView_SRC_OUT
         android:id="@+id/guaguaview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.RoundImageView_SRC_ATOP
+    <com.bryanrady.ui.view.paint.xfermode.RoundImageView_SRC_ATOP
         android:id="@+id/roundsrcatop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.InvertImageView_SRC_ATOP
+    <com.bryanrady.ui.view.paint.xfermode.InvertImageView_SRC_ATOP
         android:id="@+id/invertsrcatop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

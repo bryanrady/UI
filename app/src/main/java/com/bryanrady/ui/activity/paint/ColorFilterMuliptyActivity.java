@@ -3,7 +3,7 @@ package com.bryanrady.ui.activity.paint;
 import android.os.Bundle;
 
 import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
-import com.bryanrady.ui.view.paint.ColorMatrixFilterMulipty;
+import com.bryanrady.ui.view.paint.filter.ColorMatrixFilterMulipty;
 
 /**
  * Created by wqb on 2018/6/27.

@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.paint;
+package com.bryanrady.ui.view.paint.xfermode;
 
 import android.content.Context;
 import android.graphics.Bitmap;

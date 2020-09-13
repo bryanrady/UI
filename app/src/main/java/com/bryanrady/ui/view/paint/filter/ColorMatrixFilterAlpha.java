@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.paint;
+package com.bryanrady.ui.view.paint.filter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -17,12 +17,12 @@ import com.bryanrady.ui.R;
  * Created by wqb on 2018/6/26.
  */
 
-public class ColorMatrixFilterTranslate extends View {
+public class ColorMatrixFilterAlpha extends View {
 
     private Paint mPaint;
     private Bitmap mBitmap;
 
-    public ColorMatrixFilterTranslate(Context context) {
+    public ColorMatrixFilterAlpha(Context context) {
         super(context);
         setLayerType(LAYER_TYPE_SOFTWARE,null);
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -38,35 +38,48 @@ public class ColorMatrixFilterTranslate extends View {
 
         RectF rectF1 = new RectF(100+mBitmap.getWidth(),100,mBitmap.getWidth()*2,mBitmap.getHeight());
 
-//        色彩的平移运算---加法运算
-//        在最后一列加上某个值，这样就可以增加特定色彩的饱和度
-//
-//        色彩的反转/反相；增加饱和度
-
         float[] floats = new float[]{
                 1,0,0,0,0,
-                0,1,0,0,100,
+                0,1,0,0,0,
                 0,0,1,0,0,
-                0,0,0,1,0,
+                0,0,0,0.5f,0,
         };
         ColorMatrix colorMatrix = new ColorMatrix(floats);
         mPaint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
         canvas.drawBitmap(mBitmap, null , rectF1 , mPaint);
+
         mPaint.setColorFilter(null);
 
         RectF rectF2 = new RectF(100,mBitmap.getHeight()+200,mBitmap.getWidth(),mBitmap.getHeight()*2+100);
 
-        //反相效果 -- 底片效果
-        //把RGB值改为置反
         float[] floats2 = new float[]{
-                -1,0,0,0,255,
-                0,-1,0,0,255,
-                0,0,-1,0,255,
-                0,0,0,1,0,
+                1,0,0,0,0,
+                0,1,0,0,0,
+                0,0,1,0,0,
+                0,0,0,1.5f,0,
         };
         ColorMatrix colorMatrix2 = new ColorMatrix(floats2);
         mPaint.setColorFilter(new ColorMatrixColorFilter(colorMatrix2));
         canvas.drawBitmap(mBitmap,null,rectF2,mPaint);
+
+        mPaint.setColorFilter(null);
+
+        RectF rectF3 = new RectF(100+mBitmap.getWidth(),mBitmap.getHeight()+200,mBitmap.getWidth()*2,mBitmap.getHeight()*2+100);
+
+        // 颜色通过过滤   只显示红色
+        float[] floats3 = new float[]{
+                1,0,0,0,0,
+                0,0,0,0,0,
+                0,0,0,0,0,
+                0,0,0,1,0,
+        };
+
+
+        ColorMatrix colorMatrix3 = new ColorMatrix(floats3);
+
+        mPaint.setColorFilter(new ColorMatrixColorFilter(colorMatrix3));
+        canvas.drawBitmap(mBitmap,null, rectF3, mPaint);
+
     }
 
 }

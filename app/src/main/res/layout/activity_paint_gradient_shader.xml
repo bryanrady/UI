@@ -5,7 +5,7 @@
     android:clipToPadding="true"
     android:fitsSystemWindows="true">
 
-    <com.bryanrady.ui.view.paint.RadialGradientView
+    <com.bryanrady.ui.view.paint.shader.RadialGradientView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

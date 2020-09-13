@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.paint;
+package com.bryanrady.ui.view.paint.xfermode;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,30 +18,27 @@ import com.bryanrady.ui.R;
  * Created by wqb on 2018/6/26.
  */
 
-public class RoundImageView_DST_IN extends View {
+public class RoundImageView_SRC_ATOP extends View {
 
     private Paint mPaint;
     private Bitmap mSrcBitmap;
     private Bitmap mDestBitmap;
 
-    public RoundImageView_DST_IN(Context context, @Nullable AttributeSet attrs) {
+    public RoundImageView_SRC_ATOP(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setLayerType(LAYER_TYPE_SOFTWARE,null);
         mPaint = new Paint();
-        mSrcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.shade,null);
-        mDestBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xyjy6,null);
+        mSrcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xyjy6,null);
+        mDestBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.shade,null);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        // 1、画目标图
         canvas.drawBitmap(mDestBitmap, 0 , 0 , mPaint);
 
-        // 3、设置SRC_IN模式，画原图
-        //对比SRC_IN, 把原图片和目标图片换下位置就行了
-        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
+        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
         canvas.drawBitmap(mSrcBitmap, 0 , 0 , mPaint);
 
         mPaint.setXfermode(null);

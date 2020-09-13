@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.paint;
+package com.bryanrady.ui.view.paint.filter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -17,12 +17,12 @@ import com.bryanrady.ui.R;
  * Created by wqb on 2018/6/26.
  */
 
-public class ColorMatrixFilterMulipty extends View {
+public class ColorMatrixFilterTranslate extends View {
 
     private Paint mPaint;
     private Bitmap mBitmap;
 
-    public ColorMatrixFilterMulipty(Context context) {
+    public ColorMatrixFilterTranslate(Context context) {
         super(context);
         setLayerType(LAYER_TYPE_SOFTWARE,null);
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -38,16 +38,16 @@ public class ColorMatrixFilterMulipty extends View {
 
         RectF rectF1 = new RectF(100+mBitmap.getWidth(),100,mBitmap.getWidth()*2,mBitmap.getHeight());
 
-//       缩放运算---乘法 -- 颜色增强
-//              高亮图片
-//              颜色通道过滤（单独红色、绿色、蓝色）
+//        色彩的平移运算---加法运算
+//        在最后一列加上某个值，这样就可以增加特定色彩的饱和度
+//
+//        色彩的反转/反相；增加饱和度
 
-        //变亮
         float[] floats = new float[]{
-                1.2f,0,0,0,0,
-                0,1.2f,0,0,0,
-                0,0,1.2f,0,0,
-                0,0,0,1.2f,0,
+                1,0,0,0,0,
+                0,1,0,0,100,
+                0,0,1,0,0,
+                0,0,0,1,0,
         };
         ColorMatrix colorMatrix = new ColorMatrix(floats);
         mPaint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
@@ -56,17 +56,17 @@ public class ColorMatrixFilterMulipty extends View {
 
         RectF rectF2 = new RectF(100,mBitmap.getHeight()+200,mBitmap.getWidth(),mBitmap.getHeight()*2+100);
 
-        //变暗
+        //反相效果 -- 底片效果
+        //把RGB值改为置反
         float[] floats2 = new float[]{
-                0.6f,0,0,0,0,
-                0,0.6f,0,0,0,
-                0,0,0.6f,0,0,
-                0,0,0,0.6f,0,
+                -1,0,0,0,255,
+                0,-1,0,0,255,
+                0,0,-1,0,255,
+                0,0,0,1,0,
         };
         ColorMatrix colorMatrix2 = new ColorMatrix(floats2);
         mPaint.setColorFilter(new ColorMatrixColorFilter(colorMatrix2));
         canvas.drawBitmap(mBitmap,null,rectF2,mPaint);
-
     }
 
 }

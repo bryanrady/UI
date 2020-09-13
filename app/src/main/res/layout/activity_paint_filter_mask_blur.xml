@@ -46,24 +46,24 @@
         </TableRow>
     </TableLayout>
 
-    <com.bryanrady.ui.view.paint.BlurMaskFilter_NORMAL
+    <com.bryanrady.ui.view.paint.filter.BlurMaskFilter_NORMAL
         android:id="@+id/roundsrcin_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.bryanrady.ui.view.paint.BlurMaskFilter_SOLID
+    <com.bryanrady.ui.view.paint.filter.BlurMaskFilter_SOLID
         android:id="@+id/invertsrcin_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.BlurMaskFilter_OUTER
+    <com.bryanrady.ui.view.paint.filter.BlurMaskFilter_OUTER
         android:id="@+id/eraserview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <com.bryanrady.ui.view.paint.BlurMaskFilter_INNER
+    <com.bryanrady.ui.view.paint.filter.BlurMaskFilter_INNER
         android:id="@+id/guaguaview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package com.bryanrady.ui.view.paint;
+package com.bryanrady.ui.view.paint.xfermode;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -14,22 +14,22 @@ import android.view.View;
 import com.bryanrady.ui.R;
 
 /**
- *  Xfermode 实现圆角图片
+ *  Xfermode实现圆角图片
  * Created by wqb on 2018/6/26.
  */
 
-public class RoundImageView_SRC_IN extends View {
+public class RoundImageView_DST_IN extends View {
 
     private Paint mPaint;
     private Bitmap mSrcBitmap;
     private Bitmap mDestBitmap;
 
-    public RoundImageView_SRC_IN(Context context, @Nullable AttributeSet attrs) {
+    public RoundImageView_DST_IN(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setLayerType(LAYER_TYPE_SOFTWARE,null);
         mPaint = new Paint();
-        mSrcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xyjy6,null);
-        mDestBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.shade,null);
+        mSrcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.shade,null);
+        mDestBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xyjy6,null);
     }
 
     @Override
@@ -40,9 +40,8 @@ public class RoundImageView_SRC_IN extends View {
         canvas.drawBitmap(mDestBitmap, 0 , 0 , mPaint);
 
         // 3、设置SRC_IN模式，画原图
-        //因为目标图片是一个边框外面透明的圆形图片，所以边框外面的透明度会影响4原图片的透明度，
-        //最后原图片在边框外面的区域也不会显示了
-        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+        //对比SRC_IN, 把原图片和目标图片换下位置就行了
+        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
         canvas.drawBitmap(mSrcBitmap, 0 , 0 , mPaint);
 
         mPaint.setXfermode(null);
