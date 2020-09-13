@@ -31,7 +31,7 @@
                 app:progress_value="50"/>
         </LinearLayout>
 
-        <!--发光-->
+        <!--渐变-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -39,13 +39,14 @@
                 style="@style/text"
                 android:text="渐变"/>
             <com.bryanrady.ui.view.progress.LinearProgressBar
-                android:id="@+id/progressView2"
+                android:id="@+id/progressBar2"
                 style="@style/base"
                 app:radius="20dp"
                 app:progress_radius="20dp"
                 app:progress_value="50"/>
         </LinearLayout>
 
+        <!--发光-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -53,7 +54,6 @@
                 style="@style/text"
                 android:text="发光"/>
             <com.bryanrady.ui.view.progress.LinearProgressBar
-                android:id="@+id/progressView"
                 style="@style/base"
                 app:progress_size="30dp"
                 app:progress_color_background="@color/colorPrimaryDark"
@@ -86,7 +86,6 @@
                 app:progress_value="50"/>
         </LinearLayout>
 
-
         <!--组合-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,7 +96,7 @@
                 style="@style/text"
                 android:text="混合1"/>
             <com.bryanrady.ui.view.progress.LinearProgressBar
-                android:id="@+id/progressView5"
+                android:id="@+id/progressBar5"
                 style="@style/base"
                 app:progress_size="30dp"
                 app:progress_color_background="@color/colorPrimaryDark"
@@ -122,7 +121,7 @@
                 style="@style/text"
                 android:text="混合2"/>
             <com.bryanrady.ui.view.progress.LinearProgressBar
-                android:id="@+id/progressView6"
+                android:id="@+id/progressBar6"
                 style="@style/base"
                 app:progress_size="30dp"
                 app:progress_color_background="@color/colorPrimaryDark"
@@ -136,7 +135,7 @@
         </LinearLayout>
 
         <com.bryanrady.ui.view.progress.LinearProgressBar
-            android:id="@+id/progressView7"
+            android:id="@+id/progressBar7"
             style="@style/base"
             android:layout_width="200dp"
             android:layout_height="50dp"

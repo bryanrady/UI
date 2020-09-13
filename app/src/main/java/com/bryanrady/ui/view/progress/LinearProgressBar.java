@@ -31,7 +31,7 @@ public class LinearProgressBar extends LinearBaseProgressBar {
     public void init() {
         mOffTextX = dp2px(10);
         if(isRadius && radius == -1){
-            radius = progressSize /2;
+            radius = progressSize/2;
         }
     }
 

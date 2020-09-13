@@ -11,52 +11,52 @@ import com.bryanrady.ui.view.progress.LinearProgressBar;
 
 public class LinearProgressActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener{
 
-    LinearProgressBar progressView;
-    LinearProgressBar progressView2;
-    LinearProgressBar progressView5;
-    LinearProgressBar progressView6;
-    LinearProgressBar progressView7;
-    SeekBar seekBar;
-    SeekBar seekBar2;
+    private LinearProgressBar mProgressBar2;
+    private LinearProgressBar mProgressBar5;
+    private LinearProgressBar mProgressBar6;
+    private LinearProgressBar mProgressBar7;
+    private SeekBar mSeekBar;
+    private SeekBar mSeekBar2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_linear);
 
-        progressView = findViewById(R.id.progressView);
-        progressView2 = findViewById(R.id.progressView2);
-        progressView5 = findViewById(R.id.progressView5);
-        progressView6 = findViewById(R.id.progressView6);
-        progressView7 = findViewById(R.id.progressView7);
-        seekBar = findViewById(R.id.seekBar);
-        seekBar2 = findViewById(R.id.seekBar2);
+        mProgressBar2 = findViewById(R.id.progressBar2);
 
-        progressView2.setOutGradient(false, Color.RED, Color.YELLOW);
-        progressView5.setOutGradient(Color.RED, Color.YELLOW);
-        progressView6.setOutGradient(false, Color.parseColor("#571100"),
+        mProgressBar5 = findViewById(R.id.progressBar5);
+        mProgressBar6 = findViewById(R.id.progressBar6);
+        mProgressBar7 = findViewById(R.id.progressBar7);
+
+        mSeekBar = findViewById(R.id.seekBar);
+        mSeekBar2 = findViewById(R.id.seekBar2);
+
+        mProgressBar2.setOutGradient(false, Color.RED, Color.YELLOW);
+        mProgressBar5.setOutGradient(Color.RED, Color.YELLOW);
+        mProgressBar6.setOutGradient(false, Color.parseColor("#571100"),
                 Color.RED,
                 Color.RED,
                 Color.parseColor("#571100"));
 
-        seekBar.setMax(20);
-        seekBar.setOnSeekBarChangeListener(this);
+        mSeekBar.setMax(20);
+        mSeekBar.setOnSeekBarChangeListener(this);
 
-        seekBar2.setMax(20);
-        seekBar2.setOnSeekBarChangeListener(this);
+        mSeekBar2.setMax(20);
+        mSeekBar2.setOnSeekBarChangeListener(this);
     }
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        progress = progressView7.sp2px(progress);
+        progress = mProgressBar7.sp2px(progress);
         switch (seekBar.getId()){
             case R.id.seekBar:
-                progressView7.setRadius(progress);
-                progressView7.invalidate();
+                mProgressBar7.setRadius(progress);
+                mProgressBar7.invalidate();
                 break;
             case R.id.seekBar2:
-                progressView7.setProgressRadius(progress);
-                progressView7.invalidate();
+                mProgressBar7.setProgressRadius(progress);
+                mProgressBar7.invalidate();
                 break;
         }
     }
