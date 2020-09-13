@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="linear"/>
+        <Button
+            android:id="@+id/btn_linear_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="linear_center"/>
+        <Button
+            android:id="@+id/btn_linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="linear_bottom"/>
+        <Button
+            android:id="@+id/btn_arc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="arc"/>
+        <Button
+            android:id="@+id/btn_water_wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="water_wave"/>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="start"/>
+        <!--  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/text"
+                android:text="Linear: "/>
+            <com.bryanrady.ui.view.progress.LinearProgressBar
+                android:id="@+id/linearProgressBar"
+                style="@style/base"
+                app:progress_size="30dp"
+                app:progress_color_background="@color/colorPrimaryDark"
+                app:progress_color="#FCD728"
+                app:radius="20dp"
+                app:progress_radius="20dp"
+                app:stroke_width="1dp"
+                app:stroke_show="true"
+                app:text_size="15sp"
+                app:text_show="true"
+                app:light_show="true"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/text"
+                android:text="LineCenter: "/>
+            <com.bryanrady.ui.view.progress.LinearCenterProgressBar
+                android:id="@+id/linearCenterProgressBar"
+                style="@style/base"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:progress_size="10dp"
+                app:light_show="true"
+                app:text_color="@color/colorAccent"/>
+        </LinearLayout>
+
+        <!--LineBottomProView-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/text"
+                android:text="LinearBottom: "/>
+            <com.bryanrady.ui.view.progress.LinearBottomProgressBar
+                android:id="@+id/linearBottomProgressBar"
+                style="@style/base"
+                android:layout_gravity="center"
+                app:light_show="true"
+                app:text_color="@color/colorAccent"
+                app:progress_radius="0dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                style="@style/text"
+                android:text="Arc: " />
+            <com.bryanrady.ui.view.progress.ArcProgressBarBar
+                android:id="@+id/arcProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:light_show="true"
+                app:text_size="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="200dp">
+            <TextView
+                style="@style/text"
+                android:text="WaterWave: "/>
+            <com.bryanrady.ui.view.progress.WaterWaveProgressBar
+                android:id="@+id/waterWaveProgressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:text_size="20sp"
+                app:light_show="true"
+                app:stroke_show="false"
+                app:progress_color_background="#69B655"
+                app:progress_color="#0AA328"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

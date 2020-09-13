@@ -115,6 +115,20 @@
         <activity android:name=".activity.canvas.CanvasSearchViewActivity"
             android:theme="@style/AppTheme"/>
 
+        <activity android:name=".activity.progress.ProgressMainActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.progress.LinearProgressActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.progress.LinearCenterProgressActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.progress.LinearBottomProgressActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.progress.ArcProgressActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.progress.WaterWaveProgressActivity"
+            android:theme="@style/AppTheme"/>
+
+
         <activity android:name=".activity.path.PathActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".activity.path.PathBaseActivity"

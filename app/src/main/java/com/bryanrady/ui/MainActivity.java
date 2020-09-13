@@ -12,6 +12,7 @@ import com.bryanrady.ui.activity.paint.PaintActivity;
 import com.bryanrady.ui.activity.canvas.CanvasActivity;
 import com.bryanrady.ui.activity.animation.AnimationActivity;
 import com.bryanrady.ui.activity.path.PathActivity;
+import com.bryanrady.ui.activity.progress.ProgressMainActivity;
 import com.bryanrady.ui.activity.recycler.RecyclerViewActivity;
 import com.bryanrady.ui.activity.screen.ScreenMatchActivity;
 import com.bryanrady.ui.activity.status_bar.StatusBarBaseActivity;
@@ -22,6 +23,7 @@ public class MainActivity extends StatusBarBaseActivity implements View.OnClickL
     private Button btn_measure_layout;
     private Button btn_paint;
     private Button btn_canvas;
+    private Button btn_custom_progress;
     private Button btn_path;
     private Button btn_svg;
     private Button btn_animation;
@@ -48,6 +50,9 @@ public class MainActivity extends StatusBarBaseActivity implements View.OnClickL
 
         btn_canvas = (Button) findViewById(R.id.btn_canvas);
         btn_canvas.setOnClickListener(this);
+
+        btn_custom_progress = (Button) findViewById(R.id.btn_custom_progress);
+        btn_custom_progress.setOnClickListener(this);
 
         btn_path = (Button) findViewById(R.id.btn_path);
         btn_path.setOnClickListener(this);
@@ -89,6 +94,10 @@ public class MainActivity extends StatusBarBaseActivity implements View.OnClickL
                 break;
             case R.id.btn_canvas:
                 intent.setClass(this, CanvasActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_custom_progress:
+                intent.setClass(this, ProgressMainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_path:

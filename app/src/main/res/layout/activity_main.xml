@@ -41,6 +41,16 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="UI绘制——Canvas会话" />
+
+            <Button
+                android:id="@+id/btn_custom_progress"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="自定义进度条" />
+
             <Button
                 android:id="@+id/btn_path"
                 android:layout_margin="5dp"
