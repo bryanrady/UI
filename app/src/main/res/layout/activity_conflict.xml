@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/btn_conflict_vp_vp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ViewPager嵌套ViewPager滑动冲突" />
+
+    <Button
+        android:id="@+id/btn_conflict_sl_vp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ScrollView嵌套ViewPager滑动冲突" />
+
+    <Button
+        android:id="@+id/btn_conflict_vp_sl"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ViewPager嵌套ScrollView滑动冲突" />
+
+    <Button
+        android:id="@+id/btn_conflict_rl_rl"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="RecyclerView嵌套RecyclerVIew滑动冲突" />
+
+    <Button
+        android:id="@+id/btn_conflict_sl_rl"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ScrollView嵌套RecyclerVIew滑动冲突" />
+
+</LinearLayout>
